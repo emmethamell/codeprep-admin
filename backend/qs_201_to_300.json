@@ -1,0 +1,702 @@
+[
+    {
+        "id": 201,
+        "difficulty": "Medium",
+        "topics": ["Array", "Dynamic Programming", "Bit Manipulation"],
+        "name": "Bitwise AND of Numbers Range",
+        "content": "Given two integers `left` and `right` that represent the range `[left, right]`, return the bitwise AND of all numbers in this range, inclusive."
+    },
+    {
+        "id": 202,
+        "difficulty": "Easy",
+        "topics": ["Hash Table", "Math", "Two Pointers"],
+        "name": "Happy Number",
+        "content": "Write an algorithm to determine if a number `n` is happy.\n\nA happy number is a number defined by the following process:\n- Starting with any positive integer, replace the number by the sum of the squares of its digits.\n- Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.\n- Those numbers for which this process ends in 1 are happy.\n\nReturn `true` if `n` is a happy number, and `false` if not."
+    },
+    {
+        "id": 203,
+        "difficulty": "Easy",
+        "topics": ["Linked List", "Recursion"],
+        "name": "Remove Linked List Elements",
+        "content": "Given the `head` of a linked list and an integer `val`, remove all the nodes of the linked list that has `Node.val == val`, and return the new head."
+    },
+    {
+        "id": 204,
+        "difficulty": "Easy",
+        "topics": ["Math", "Algorithm"],
+        "name": "Count Primes",
+        "content": "Given an integer `n`, return the number of prime numbers that are strictly less than `n`."
+    },
+    {
+        "id": 205,
+        "difficulty": "Easy",
+        "topics": ["Hash Table", "String"],
+        "name": "Isomorphic Strings",
+        "content": "Given two strings `s` and `t`, determine if they are isomorphic.\n\nTwo strings `s` and `t` are isomorphic if the characters in `s` can be replaced to get `t`.\n\nAll occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself."
+    },
+    {
+        "id": 206,
+        "difficulty": "Easy",
+        "topics": ["Linked List", "Recursion"],
+        "name": "Reverse Linked List",
+        "content": "Given the `head` of a singly linked list, reverse the list, and return the reversed list."
+    },
+    {
+        "id": 207,
+        "difficulty": "Medium",
+        "topics": ["Depth-First Search", "Breadth-First Search", "Graph", "Topological Sort"],
+        "name": "Course Schedule",
+        "content": "There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [ai, bi]` indicates that you must take course `bi` first if you want to take course `ai`.\n\nFor example, the pair `[0, 1]`, indicates that to take course `0` you have to first take course `1`.\n\nReturn `true` if you can finish all courses. Otherwise, return `false`."
+    },
+    {
+        "id": 208,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "String", "Design", "Trie"],
+        "name": "Implement Trie (Prefix Tree)",
+        "content": "A trie (pronounced as \"try\") or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.\n\nImplement the Trie class:\n- `Trie()` Initializes the trie object.\n- `void insert(String word)` Inserts the string `word` into the trie.\n- `boolean search(String word)` Returns `true` if the string `word` is in the trie (i.e., was inserted before), and `false` otherwise.\n- `boolean startsWith(String prefix)` Returns `true` if there is a previously inserted string `word` that has the prefix `prefix`, and `false` otherwise."
+    },
+    {
+        "id": 209,
+        "difficulty": "Medium",
+        "topics": ["Array", "Binary Search", "Sliding Window", "Prefix Sum"],
+        "name": "Minimum Size Subarray Sum",
+        "content": "Given an array of positive integers `nums` and a positive integer `target`, return the minimal length of a contiguous subarray `[numsl, numsl+1, ..., numsr-1, numsr]` of which the sum is greater than or equal to `target`. If there is no such subarray, return `0` instead."
+    },
+    {
+        "id": 210,
+        "difficulty": "Medium",
+        "topics": ["Depth-First Search", "Breadth-First Search", "Graph", "Topological Sort"],
+        "name": "Course Schedule II",
+        "content": "There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [ai, bi]` indicates that you must take course `bi` first if you want to take course `ai`.\n\nFor example, the pair `[0, 1]`, indicates that to take course `0` you have to first take course `1`.\n\nReturn the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array."
+    },
+    {
+        "id": 211,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "String", "Design"],
+        "name": "Design Add and Search Words Data Structure",
+        "content": "Design a data structure that supports adding new words and finding if a string matches any previously added string.\n\nImplement the WordDictionary class:\n- `WordDictionary()` Initializes the object.\n- `void addWord(word)` Adds `word` to the data structure, it can be matched later.\n- `bool search(word)` Returns `true` if there is any string in the data structure that matches `word` or `false` otherwise. `word` may contain dots `'.'` where dots can be matched with any letter."
+    },
+    {
+        "id": 212,
+        "difficulty": "Hard",
+        "topics": ["Array", "String", "Backtracking", "Trie"],
+        "name": "Word Search II",
+        "content": "Given an `m x n` `board` of characters and a list of strings `words`, return all words on the board.\n\nEach word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word."
+    },
+    {
+        "id": 213,
+        "difficulty": "Medium",
+        "topics": ["Array", "Dynamic Programming"],
+        "name": "House Robber II",
+        "content": "You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and it will automatically contact the police if two adjacent houses were broken into on the same night.\n\nGiven an integer array `nums` representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police."
+    },
+    {
+        "id": 214,
+        "difficulty": "Hard",
+        "topics": ["Array", "Two Pointers", "Stack", "Greedy", "Monotonic Stack"],
+        "name": "Shortest Palindrome",
+        "content": "You are given a string `s`. You can convert `s` to a palindrome by adding characters in front of it.\n\nReturn the shortest palindrome you can find by performing this transformation."
+    },
+    {
+        "id": 215,
+        "difficulty": "Medium",
+        "topics": ["Array", "Divide and Conquer", "Sorting", "Heap (Priority Queue)", "Quickselect"],
+        "name": "Kth Largest Element in an Array",
+        "content": "Given an integer array `nums` and an integer `k`, return the `kth` largest element in the array.\n\nNote that it is the `kth` largest element in the sorted order, not the `kth` distinct element."
+    },
+    {
+        "id": 216,
+        "difficulty": "Medium",
+        "topics": ["Array", "Backtracking"],
+        "name": "Combination Sum III",
+        "content": "Find all valid combinations of `k` numbers that sum up to `n` such that the following conditions are true:\n- Only numbers `1` through `9` are used.\n- Each number is used at most once.\n\nReturn a list of all possible valid combinations. The list must not contain the same combination twice, and the combinations may be returned in any order."
+    },
+    {
+        "id": 217,
+        "difficulty": "Easy",
+        "topics": ["Array", "Hash Table"],
+        "name": "Contains Duplicate",
+        "content": "Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if every element is distinct."
+    },
+    {
+        "id": 218,
+        "difficulty": "Hard",
+        "topics": ["Array", "Divide and Conquer", "Binary Indexed Tree", "Segment Tree", "Line Sweep", "Heap (Priority Queue)"],
+        "name": "The Skyline Problem",
+        "content": "A city's skyline is the outer contour of the silhouette formed by all the buildings in that city when viewed from a distance. Given the locations and heights of all the buildings, return the skyline formed by these buildings collectively."
+    },
+    {
+        "id": 219,
+        "difficulty": "Easy",
+        "topics": ["Array", "Hash Table", "Sliding Window"],
+        "name": "Contains Duplicate II",
+        "content": "Given an integer array `nums` and an integer `k`, return `true` if there are two distinct indices `i` and `j` in the array such that `nums[i] == nums[j]` and `abs(i - j) <= k`."
+    },
+    {
+        "id": 220,
+        "difficulty": "Hard",
+        "topics": ["Array", "Sliding Window", "Sorting", "Bucket Sort"],
+        "name": "Contains Duplicate III",
+        "content": "Given an integer array `nums` and two integers `k` and `t`, return `true` if there are two distinct indices `i` and `j` in the array such that `abs(nums[i] - nums[j]) <= t` and `abs(i - j) <= k`."
+    },
+    {
+        "id": 221,
+        "difficulty": "Medium",
+        "topics": ["Array", "Dynamic Programming", "Matrix"],
+        "name": "Maximal Square",
+        "content": "Given an `m x n` binary matrix filled with `0`'s and `1`'s, find the largest square containing only `1`'s and return its area."
+    },
+    {
+        "id": 222,
+        "difficulty": "Medium",
+        "topics": ["Tree", "Depth-First Search", "Binary Search", "Binary Tree"],
+        "name": "Count Complete Tree Nodes",
+        "content": "Given the `root` of a complete binary tree, return the number of the nodes in the tree.\n\nAccording to Wikipedia, every level, except possibly the last, is completely filled in a complete binary tree, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h."
+    },
+    {
+        "id": 223,
+        "difficulty": "Medium",
+        "topics": ["Math", "Geometry"],
+        "name": "Rectangle Area",
+        "content": "Given the coordinates of two rectilinear rectangles in a 2D plane, return the total area covered by the two rectangles.\n\nThe first rectangle is defined by its bottom-left corner `(ax1, ay1)` and its top-right corner `(ax2, ay2)`.\n\nThe second rectangle is defined by its bottom-left corner `(bx1, by1)` and its top-right corner `(bx2, by2)`."
+    },
+    {
+        "id": 224,
+        "difficulty": "Hard",
+        "topics": ["Math", "String", "Stack", "Recursion"],
+        "name": "Basic Calculator",
+        "content": "Given a string `s` representing a valid expression, implement a basic calculator to evaluate it, and return the result of the evaluation.\n\nNote: You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as `eval()`."
+    },
+    {
+        "id": 225,
+        "difficulty": "Easy",
+        "topics": ["Design", "Queue"],
+        "name": "Implement Stack using Queues",
+        "content": "Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (`push`, `top`, `pop`, and `empty`).\n\nImplement the `MyStack` class:\n- `void push(int x)` Pushes element x to the top of the stack.\n- `int pop()` Removes the element on the top of the stack and returns it.\n- `int top()` Returns the element on the top of the stack.\n- `boolean empty()` Returns `true` if the stack is empty, `false` otherwise."
+    },
+    {
+        "id": 226,
+        "difficulty": "Easy",
+        "topics": ["Tree", "Depth-First Search", "Binary Tree"],
+        "name": "Invert Binary Tree",
+        "content": "Given the `root` of a binary tree, invert the tree, and return its root.\n\nInverting a binary tree means swapping every left node with its right node at every level."
+    },
+    {
+        "id": 227,
+        "difficulty": "Medium",
+        "topics": ["Math", "String", "Stack"],
+        "name": "Basic Calculator II",
+        "content": "Given a string `s` which represents an expression, evaluate this expression and return its value.\n\nThe integer division should truncate toward zero.\n\nYou may assume that the given expression is always valid. All intermediate results will be in the range of `[-231, 231 - 1]`."
+    },
+    {
+        "id": 228,
+        "difficulty": "Easy",
+        "topics": ["Array"],
+        "name": "Summary Ranges",
+        "content": "You are given a sorted unique integer array `nums`.\n\nA range `[a,b]` is the set of all integers from `a` to `b` (inclusive).\n\nReturn the smallest sorted list of ranges that cover all the numbers in the array exactly. That is, each element of `nums` is covered by exactly one of the ranges, and there is no integer `x` such that `x` is in one of the ranges but not in `nums`."
+    },
+    {
+        "id": 229,
+        "difficulty": "Medium",
+        "topics": ["Array", "Hash Table", "Counting", "Sorting"],
+        "name": "Majority Element II",
+        "content": "Given an integer array of size `n`, find all elements that appear more than `⌊ n/3 ⌋` times.\n\nFollow-up: Could you solve the problem in linear time and in O(1) space?"
+    },
+    {
+        "id": 230,
+        "difficulty": "Medium",
+        "topics": ["Tree", "Depth-First Search", "Binary Search Tree", "Binary Tree"],
+        "name": "Kth Smallest Element in a BST",
+        "content": "Given the `root` of a binary search tree, and an integer `k`, return the `kth` smallest value (1-indexed) of all the values of the nodes in the tree."
+    },
+    {
+        "id": 231,
+        "difficulty": "Easy",
+        "topics": ["Math", "Bit Manipulation", "Recursion"],
+        "name": "Power of Two",
+        "content": "Given an integer `n`, return `true` if it is a power of two. Otherwise, return `false`.\n\nAn integer `n` is a power of two, if there exists an integer `x` such that `n == 2^x`."
+    },
+    {
+        "id": 232,
+        "difficulty": "Easy",
+        "topics": ["Stack", "Design", "Queue"],
+        "name": "Implement Queue using Stacks",
+        "content": "Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (`push`, `peek`, `pop`, and `empty`).\n\nImplement the `MyQueue` class:\n- `void push(int x)` Pushes element x to the back of the queue.\n- `int pop()` Removes the element from the front of the queue and returns it.\n- `int peek()` Returns the element at the front of the queue.\n- `boolean empty()` Returns `true` if the queue is empty, `false` otherwise."
+    },
+    {
+        "id": 233,
+        "difficulty": "Hard",
+        "topics": ["Math", "Dynamic Programming"],
+        "name": "Number of Digit One",
+        "content": "Given an integer `n`, count the total number of digit 1 appearing in all non-negative integers less than or equal to `n`."
+    },
+    {
+        "id": 234,
+        "difficulty": "Easy",
+        "topics": ["Linked List", "Two Pointers", "Stack", "Recursion"],
+        "name": "Palindrome Linked List",
+        "content": "Given the `head` of a singly linked list, return `true` if it is a palindrome or `false` otherwise."
+    },
+    {
+        "id": 235,
+        "difficulty": "Easy",
+        "topics": ["Tree", "Depth-First Search", "Binary Search Tree", "Binary Tree"],
+        "name": "Lowest Common Ancestor of a Binary Search Tree",
+        "content": "Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.\n\nAccording to the definition of LCA on Wikipedia: "The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow a node to be a descendant of itself).""
+    },
+    {
+        "id": 236,
+        "difficulty": "Medium",
+        "topics": ["Tree", "Depth-First Search", "Binary Tree"],
+        "name": "Lowest Common Ancestor of a Binary Tree",
+        "content": "Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.\n\nAccording to the definition of LCA on Wikipedia: "The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow a node to be a descendant of itself).""
+    },
+    {
+        "id": 237,
+        "difficulty": "Easy",
+        "topics": ["Linked List"],
+        "name": "Delete Node in a Linked List",
+        "content": "Write a function to delete a node in a singly-linked list. You will not be given access to the `head` of the list, instead you will be given access to the node to be deleted directly.\n\nIt is guaranteed that the node to be deleted is not a tail node in the list."
+    },
+    {
+        "id": 238,
+        "difficulty": "Medium",
+        "topics": ["Array", "Prefix Sum"],
+        "name": "Product of Array Except Self",
+        "content": "Given an integer array `nums`, return an array `answer` such that `answer[i]` is equal to the product of all the elements of `nums` except `nums[i]`.\n\nThe product of any prefix or suffix of `nums` is guaranteed to fit in a 32-bit integer.\n\nYou must write an algorithm that runs in `O(n)` time and without using the division operation."
+    },
+    {
+        "id": 239,
+        "difficulty": "Hard",
+        "topics": ["Array", "Queue", "Sliding Window", "Heap (Priority Queue)", "Monotonic Queue"],
+        "name": "Sliding Window Maximum",
+        "content": "You are given an array of integers `nums`, there is a sliding window of size `k` which is moving from the very left of the array to the very right. You can only see the `k` numbers in the window. Each time the sliding window moves right by one position.\n\nReturn the max sliding window."
+    },
+    {
+        "id": 240,
+        "difficulty": "Medium",
+        "topics": ["Array", "Binary Search", "Divide and Conquer", "Matrix"],
+        "name": "Search a 2D Matrix II",
+        "content": "Write an efficient algorithm that searches for a value `target` in an `m x n` integer matrix `matrix`. This matrix has the following properties:\n- Integers in each row are sorted in ascending from left to right.\n- Integers in each column are sorted in ascending from top to bottom."
+    },
+    {
+        "id": 241,
+        "difficulty": "Medium",
+        "topics": ["Math", "String", "Dynamic Programming", "Recursion"],
+        "name": "Different Ways to Add Parentheses",
+        "content": "Given a string `expression` of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. You may return the answer in any order."
+    },
+    {
+        "id": 242,
+        "difficulty": "Easy",
+        "topics": ["Hash Table", "String", "Sorting"],
+        "name": "Valid Anagram",
+        "content": "Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.\n\nAn Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once."
+    },
+    {
+        "id": 243,
+        "difficulty": "Medium",
+        "topics": ["String", "Dynamic Programming"],
+        "name": "Shortest Word Distance",
+        "content": "Given an array of strings `wordsDict` and two different strings that already exist in the array `word1` and `word2`, return the shortest distance between these two words in the list."
+    },
+    {
+        "id": 244,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "String", "Design"],
+        "name": "Shortest Word Distance II",
+        "content": "Design a data structure that will be initialized with a string array, and then it should answer queries of the shortest distance between two different strings from the array.\n\nImplement the `WordDistance` class:\n- `WordDistance(String[] wordsDict)` initializes the object with the strings array `wordsDict`.\n- `int shortest(String word1, String word2)` returns the shortest distance between `word1` and `word2` in the array `wordsDict`."
+    },
+    {
+        "id": 245,
+        "difficulty": "Hard",
+        "topics": ["Array", "String"],
+        "name": "Shortest Word Distance III",
+        "content": "Given an array of strings `wordsDict` and two strings that already exist in the array `word1` and `word2`, return the shortest distance between these two words in the list.\n\nNote that `word1` and `word2` may be the same. It is guaranteed that they represent two individual words in the list."
+    },
+    {
+        "id": 246,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "Math", "Graph"],
+        "name": "Strobogrammatic Number",
+        "content": "Given a string `num` which represents an integer, return `true` if `num` is a strobogrammatic number.\n\nA strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down)."
+    },
+    {
+        "id": 247,
+        "difficulty": "Medium",
+        "topics": ["Math", "Backtracking", "Recursion"],
+        "name": "Strobogrammatic Number II",
+        "content": "Given an integer `n`, return all the strobogrammatic numbers that are of length `n`. You may return the answer in any order.\n\nA strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down)."
+    },
+    {
+        "id": 248,
+        "difficulty": "Hard",
+        "topics": ["Math", "Backtracking", "Recursion"],
+        "name": "Strobogrammatic Number III",
+        "content": "Given two strings `low` and `high` that represent two integers `low` and `high` where `low <= high`, return the number of strobogrammatic numbers in the range `[low, high]`.\n\nA strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down)."
+    },
+    {
+        "id": 249,
+        "difficulty": "Medium",
+        "topics": ["Array", "Hash Table", "Union Find"],
+        "name": "Group Shifted Strings",
+        "content": "We can shift a string by shifting each of its letters to its successive letter.\n- For example, `\"abc\"` can be shifted to be `\"bcd\"`.\n\nWe can keep shifting the string to form a sequence.\n- For example, we can keep shifting `\"abc\"` to form the sequence: `\"abc\" -> \"bcd\" -> \"cde\" -> \"def\"`.\n\nGiven an array of strings `strings`, group all strings[i] that belong to the same shifting sequence. You may return the answer in any order."
+    },
+    {
+        "id": 250,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "Math", "String"],
+        "name": "Count Univalue Subtrees",
+        "content": "Given the `root` of a binary tree, return the number of uni-value subtrees.\n\nA uni-value subtree means all nodes of the subtree have the same value."
+    },
+    {
+        "id": 251,
+        "difficulty": "Medium",
+        "topics": ["Array", "Matrix"],
+        "name": "Flatten 2D Vector",
+        "content": "Design an iterator to flatten a 2D vector. It should support the `next` and `hasNext` operations.\n\nImplement the `Vector2D` class:\n- `Vector2D(int[][] vec)` initializes the object with the 2D vector `vec`.\n- `next()` returns the next element from the 2D vector and moves the pointer one step forward.\n- `hasNext()` returns `true` if there are still some elements in the vector, and `false` otherwise."
+    },
+    {
+        "id": 252,
+        "difficulty": "Medium",
+        "topics": ["Array", "Two Pointers", "Greedy", "Sorting"],
+        "name": "Meeting Rooms",
+        "content": "Given an array of meeting time intervals where `intervals[i] = [starti, endi]`, determine if a person could attend all meetings."
+    },
+    {
+        "id": 253,
+        "difficulty": "Medium",
+        "topics": ["Array", "Two Pointers", "Greedy", "Sorting", "Heap (Priority Queue)"],
+        "name": "Meeting Rooms II",
+        "content": "Given an array of meeting time intervals `intervals` where `intervals[i] = [starti, endi]`, return the minimum number of conference rooms required."
+    },
+    {
+        "id": 254,
+        "difficulty": "Medium",
+        "topics": ["Array", "Backtracking"],
+        "name": "Factor Combinations",
+        "content": "Numbers can be regarded as the product of their factors.\n- For example, `8 = 2 x 2 x 2 = 2 x 4`.\n\nGiven an integer `n`, return all possible combinations of its factors. You may return the answer in any order.\n\nNote that the factors should be in the range `[2, n - 1]`."
+    },
+    {
+        "id": 255,
+        "difficulty": "Medium",
+        "topics": ["Tree", "Binary Search Tree", "Binary Tree"],
+        "name": "Verify Preorder Sequence in Binary Search Tree",
+        "content": "Given an array of unique integers `preorder`, return `true` if it is the correct preorder traversal sequence of a binary search tree."
+    },
+    {
+        "id": 256,
+        "difficulty": "Medium",
+        "topics": ["Array", "Dynamic Programming"],
+        "name": "Paint House",
+        "content": "There are a row of `n` houses, each house can be painted with one of the three colors: red, blue, or green. The cost of painting each house with a certain color is different. You have to paint all the houses such that no two adjacent houses have the same color.\n\nThe cost of painting each house with a certain color is represented by an `n x 3` cost matrix costs.\n- For example, `costs[0][0]` is the cost of painting house 0 with the color red; `costs[1][2]` is the cost of painting house 1 with color green, and so on...\n\nReturn the minimum cost to paint all houses."
+    },
+    {
+        "id": 257,
+        "difficulty": "Easy",
+        "topics": ["String", "Tree", "Depth-First Search", "Binary Tree"],
+        "name": "Binary Tree Paths",
+        "content": "Given the `root` of a binary tree, return all root-to-leaf paths in any order.\n\nA leaf is a node with no children."
+    },
+    {
+        "id": 258,
+        "difficulty": "Easy",
+        "topics": ["Math", "Simulation", "Number Theory"],
+        "name": "Add Digits",
+        "content": "Given an integer `num`, repeatedly add all its digits until the result has only one digit, and return it.\n\nFor example:\nIf `num = 38`, then `3 + 8 = 11`, `1 + 1 = 2`. Since 2 has only one digit, return 2."
+    },
+    {
+        "id": 259,
+        "difficulty": "Medium",
+        "topics": ["Array", "Two Pointers", "Sorting"],
+        "name": "3Sum Smaller",
+        "content": "Given an array of `n` integers `nums` and an integer `target`, find the number of index triplets `i`, `j`, `k` with `0 <= i < j < k < n` that satisfy the condition `nums[i] + nums[j] + nums[k] < target`."
+    },
+    {
+        "id": 260,
+        "difficulty": "Medium",
+        "topics": ["Bit Manipulation"],
+        "name": "Single Number III",
+        "content": "Given an integer array `nums`, in which exactly two elements appear only once and all the other elements appear exactly twice. Find the two elements that appear only once. You can return the answer in any order.\n\nYou must write an algorithm that runs in linear runtime complexity and uses only constant extra space."
+    },
+    {
+        "id": 261,
+        "difficulty": "Medium",
+        "topics": ["Depth-First Search", "Breadth-First Search", "Union Find", "Graph"],
+        "name": "Graph Valid Tree",
+        "content": "You have a graph of `n` nodes labeled from `0` to `n - 1`. You are given an integer n and a list of `edges` where `edges[i] = [ai, bi]` indicates that there is an undirected edge between nodes `ai` and `bi` in the graph.\n\nReturn `true` if the edges of the given graph make up a valid tree, and `false` otherwise."
+    },
+    {
+        "id": 262,
+        "difficulty": "Hard",
+        "topics": ["Database"],
+        "name": "Trips and Users",
+        "content": "Table: `Trips`\n```\n+-------------+----------+\n| Column Name | Type     |\n+-------------+----------+\n| id          | int      |\n| client_id   | int      |\n| driver_id   | int      |\n| city_id     | int      |\n| status      | enum     |\n| request_at  | date     |\n+-------------+----------+\nid is the primary key for this table.\nThe table holds all taxi trips. Each trip has a unique id, while client_id and driver_id are foreign keys to the users_id at the Users table.\nStatus is an ENUM type of ('completed', 'cancelled_by_driver', 'cancelled_by_client').\n```\n\nWrite a SQL query to find the cancellation rate of requests with unbanned users (both client and driver must not be banned) each day between \"2013-10-01\" and \"2013-10-03\".\n\nReturn the result table in any order."
+    },
+    {
+        "id": 263,
+        "difficulty": "Easy",
+        "topics": ["Math"],
+        "name": "Ugly Number",
+        "content": "An ugly number is a positive integer whose prime factors are limited to `2`, `3`, and `5`.\n\nGiven an integer `n`, return `true` if `n` is an ugly number."
+    },
+    {
+        "id": 264,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "Math", "Dynamic Programming", "Heap (Priority Queue)"],
+        "name": "Ugly Number II",
+        "content": "An ugly number is a positive integer whose prime factors are limited to `2`, `3`, and `5`.\n\nGiven an integer `n`, return the `nth` ugly number."
+    },
+    {
+        "id": 265,
+        "difficulty": "Hard",
+        "topics": ["Array", "Dynamic Programming"],
+        "name": "Paint House II",
+        "content": "There are a row of `n` houses, each house can be painted with one of the `k` colors. The cost of painting each house with a certain color is different. You have to paint all the houses such that no two adjacent houses have the same color.\n\nThe cost of painting each house with a certain color is represented by an `n x k` cost matrix costs.\n\nReturn the minimum cost to paint all houses."
+    },
+    {
+        "id": 266,
+        "difficulty": "Easy",
+        "topics": ["Hash Table", "String"],
+        "name": "Palindrome Permutation",
+        "content": "Given a string `s`, return `true` if a permutation of the string could form a palindrome."
+    },
+    {
+        "id": 267,
+        "difficulty": "Medium",
+        "topics": ["String", "Backtracking"],
+        "name": "Palindrome Permutation II",
+        "content": "Given a string `s`, return all the palindromic permutations (without duplicates) of it.\n\nYou may return the answer in any order. If `s` has no palindromic permutation, return an empty list."
+    },
+    {
+        "id": 268,
+        "difficulty": "Easy",
+        "topics": ["Array", "Hash Table", "Math", "Bit Manipulation"],
+        "name": "Missing Number",
+        "content": "Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, return the only number in the range that is missing from the array."
+    },
+    {
+        "id": 269,
+        "difficulty": "Hard",
+        "topics": ["Hash Table", "Math", "String"],
+        "name": "Alien Dictionary",
+        "content": "There is a new alien language that uses the English alphabet. However, the order among the letters is unknown to you.\n\nYou are given a list of strings `words` from the alien language's dictionary, where the strings in `words` are sorted lexicographically by the rules of this new language.\n\nReturn a string of the unique letters in the new alien language sorted in lexicographically increasing order by the new language's rules. If there is no solution, return \"\". If there are multiple solutions, return any of them."
+    },
+    {
+        "id": 270,
+        "difficulty": "Medium",
+        "topics": ["Array", "Binary Search"],
+        "name": "Closest Binary Search Tree Value",
+        "content": "Given the `root` of a binary search tree and a `target` value, return the value in the BST that is closest to the `target`."
+    },
+    {
+        "id": 271,
+        "difficulty": "Medium",
+        "topics": ["Math", "String"],
+        "name": "Encode and Decode Strings",
+        "content": "Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.\n\nImplement the `encode` and `decode` methods:\n- `encode(List<String> strs)` - encode a list of strings to a single string\n- `decode(String s)` - decode a single string to a list of strings"
+    },
+    {
+        "id": 272,
+        "difficulty": "Hard",
+        "topics": ["Tree", "Binary Search Tree", "Binary Tree"],
+        "name": "Closest Binary Search Tree Value II",
+        "content": "Given the `root` of a binary search tree, a `target` value, and an integer `k`, return the `k` values in the BST that are closest to the target. You may return the answer in any order.\n\nYou are guaranteed to have only one unique set of k values in the BST that are closest to the target."
+    },
+    {
+        "id": 273,
+        "difficulty": "Hard",
+        "topics": ["Math", "String", "Recursion"],
+        "name": "Integer to English Words",
+        "content": "Convert a non-negative integer `num` to its English words representation."
+    },
+    {
+        "id": 274,
+        "difficulty": "Medium",
+        "topics": ["Array", "Sorting", "Counting"],
+        "name": "H-Index",
+        "content": "Given an array of integers `citations` where `citations[i]` is the number of citations a researcher received for their ith paper, return the researcher's h-index.\n\nAccording to the definition of h-index on Wikipedia: The h-index is defined as the maximum value of h such that the given researcher has published at least h papers that have each been cited at least h times."
+    },
+    {
+        "id": 275,
+        "difficulty": "Medium",
+        "topics": ["Array", "Binary Search"],
+        "name": "H-Index II",
+        "content": "Given an array of integers `citations` where `citations[i]` is the number of citations a researcher received for their ith paper and citations is sorted in ascending order, return the researcher's h-index.\n\nAccording to the definition of h-index on Wikipedia: The h-index is defined as the maximum value of h such that the given researcher has published at least h papers that have each been cited at least h times.\n\nYou must write an algorithm that runs in logarithmic time."
+    },
+    {
+        "id": 276,
+        "difficulty": "Medium",
+        "topics": ["Dynamic Programming"],
+        "name": "Paint Fence",
+        "content": "You are painting a fence of `n` posts with `k` different colors. You must paint the posts following these rules:\n- Every post must be painted exactly one color.\n- There cannot be three or more consecutive posts with the same color.\n\nGiven the two integers `n` and `k`, return the number of ways you can paint the fence."
+    },
+    {
+        "id": 277,
+        "difficulty": "Medium",
+        "topics": ["Array", "Interactive"],
+        "name": "Find the Celebrity",
+        "content": "Suppose you are at a party with `n` people labeled from `0` to `n - 1` and among them, there may exist one celebrity. The definition of a celebrity is that all the other `n - 1` people know the celebrity, but the celebrity does not know any of them.\n\nNow you want to find out who the celebrity is or verify that there is not one. The only thing you are allowed to do is ask questions like: \"Hi, A. Do you know B?\" to get information about whether A knows B. You need to find out the celebrity (or verify there is not one) by asking as few questions as possible (in the asymptotic sense).\n\nYou are given a helper function `bool knows(a, b)` that tells you whether A knows B. Implement a function `int findCelebrity(n)`. There will be exactly one celebrity if they are at the party."
+    },
+    {
+        "id": 278,
+        "difficulty": "Easy",
+        "topics": ["Binary Search", "Interactive"],
+        "name": "First Bad Version",
+        "content": "You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.\n\nSuppose you have `n` versions `[1, 2, ..., n]` and you want to find out the first bad one, which causes all the following ones to be bad.\n\nYou are given an API `bool isBadVersion(version)` which returns whether `version` is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API."
+    },
+    {
+        "id": 279,
+        "difficulty": "Hard",
+        "topics": ["Math", "Dynamic Programming"],
+        "name": "Perfect Squares",
+        "content": "Given an integer `n`, return the least number of perfect square numbers that sum to `n`.\n\nA perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself. For example, `1`, `4`, `9`, and `16` are perfect squares while `3` and `11` are not."
+    },
+    {
+        "id": 280,
+        "difficulty": "Medium",
+        "topics": ["Array", "Two Pointers"],
+        "name": "Wiggle Sort",
+        "content": "Given an integer array `nums`, reorder it such that `nums[0] <= nums[1] >= nums[2] <= nums[3]...`.\n\nYou may assume the input array always has a valid answer."
+    },
+    {
+        "id": 281,
+        "difficulty": "Medium",
+        "topics": ["Array"],
+        "name": "Zigzag Iterator",
+        "content": "Given two vectors of integers `v1` and `v2`, implement an iterator to return their elements alternately.\n\nImplement the `ZigzagIterator` class:\n- `ZigzagIterator(List<int> v1, List<int> v2)` initializes the object with the two vectors v1 and v2.\n- `boolean hasNext()` returns true if the iterator still has elements, and false otherwise.\n- `int next()` returns the current element of the iterator and moves the iterator to the next element."
+    },
+    {
+        "id": 282,
+        "difficulty": "Hard",
+        "topics": ["Array", "Dynamic Programming", "Game Theory"],
+        "name": "Expression Add Operators",
+        "content": "Given a string `num` that contains only digits and an integer `target`, return all possibilities to insert the binary operators `'+'`, `'-'`, and/or `'*'` between the digits of num so that the resultant expression evaluates to the `target` value.\n\nNote that operands in the returned expressions should not contain leading zeros."
+    },
+    {
+        "id": 283,
+        "difficulty": "Easy",
+        "topics": ["Array", "Two Pointers"],
+        "name": "Move Zeroes",
+        "content": "Given an integer array `nums`, move all `0`'s to the end of it while maintaining the relative order of the non-zero elements.\n\nNote that you must do this in-place without making a copy of the array."
+    },
+    {
+        "id": 284,
+        "difficulty": "Medium",
+        "topics": ["Array", "Design"],
+        "name": "Peeking Iterator",
+        "content": "Design an iterator that supports the `peek` operation on an existing iterator in addition to the `hasNext` and the `next` operations.\n\nImplement the `PeekingIterator` class:\n- `PeekingIterator(Iterator<int> nums)` Initializes the object with the given integer iterator `iterator`.\n- `int next()` Returns the next element in the array and moves the pointer to the next element.\n- `boolean hasNext()` Returns `true` if there are still elements in the array.\n- `int peek()` Returns the next element in the array without moving the pointer."
+    },
+    {
+        "id": 285,
+        "difficulty": "Medium",
+        "topics": ["Tree", "Binary Search Tree", "Binary Tree"],
+        "name": "Inorder Successor in BST",
+        "content": "Given the `root` of a binary search tree and a node `p` in it, return the in-order successor of that node in the BST. If the given node has no in-order successor in the tree, return `null`.\n\nThe successor of a node `p` is the node with the smallest key greater than `p.val`."
+    },
+    {
+        "id": 286,
+        "difficulty": "Medium",
+        "topics": ["Array", "Dynamic Programming", "Matrix"],
+        "name": "Walls and Gates",
+        "content": "You are given an `m x n` grid `rooms` initialized with these three possible values.\n- `-1` A wall or an obstacle.\n- `0` A gate.\n- `INF` Infinity means an empty room.\n\nWe use the value `231 - 1 = 2147483647` to represent `INF` as you may assume that the distance to a gate is less than `2147483647`.\n\nFill each empty room with the distance to its nearest gate. If it is impossible to reach a gate, it should be filled with `INF`."
+    },
+    {
+        "id": 287,
+        "difficulty": "Medium",
+        "topics": ["Array", "Two Pointers", "Binary Search"],
+        "name": "Find the Duplicate Number",
+        "content": "Given an array of integers `nums` containing `n + 1` integers where each integer is in the range `[1, n]` inclusive.\n\nThere is only one repeated number in `nums`, return this repeated number.\n\nYou must solve the problem without modifying the array `nums` and uses only constant extra space."
+    },
+    {
+        "id": 288,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "String", "Design"],
+        "name": "Unique Word Abbreviation",
+        "content": "The abbreviation of a word is a concatenation of its first letter, the number of characters between the first and last letter, and its last letter. If the word has only two characters, then it is an abbreviation of itself.\n\nImplement the `ValidWordAbbr` class:\n- `ValidWordAbbr(String[] dictionary)` Initializes the object with a dictionary of words.\n- `boolean isUnique(string word)` Returns true if either of these cases hold:\n  - No word in dictionary shares the same abbreviation as word.\n  - For all words in dictionary that share the same abbreviation as word, they are the same as word."
+    },
+    {
+        "id": 289,
+        "difficulty": "Medium",
+        "topics": ["Array", "Matrix", "Simulation"],
+        "name": "Game of Life",
+        "content": "According to Wikipedia's article: \"The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.\"\n\nThe board is made up of an `m x n` grid of cells, where each cell has an initial state: live (represented by a 1) or dead (represented by a 0). Each cell interacts with its eight neighbors (horizontal, vertical, diagonal) using the following four rules (taken from the above Wikipedia article):\n1. Any live cell with fewer than two live neighbors dies as if caused by under-population.\n2. Any live cell with two or three live neighbors lives on to the next generation.\n3. Any live cell with more than three live neighbors dies, as if by over-population.\n4. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.\n\nThe next state is created by applying the above rules simultaneously to every cell in the current state, where births and deaths occur simultaneously. Given the current state of the `m x n` grid `board`, return the next state."
+    },
+    {
+        "id": 290,
+        "difficulty": "Easy",
+        "topics": ["Hash Table", "String"],
+        "name": "Word Pattern",
+        "content": "Given a `pattern` and a string `s`, find if `s` follows the same pattern.\n\nHere follow means a full match, such that there is a bijection between a letter in `pattern` and a non-empty word in `s`."
+    },
+    {
+        "id": 291,
+        "difficulty": "Medium",
+        "topics": ["String", "Backtracking"],
+        "name": "Word Pattern II",
+        "content": "Given a pattern and a string `s`, find if `s` follows the same pattern.\n\nHere follow means a full match, such that there is a bijection between a letter in pattern and a non-empty substring in `s`."
+    },
+    {
+        "id": 292,
+        "difficulty": "Medium",
+        "topics": ["Math", "Dynamic Programming", "Game Theory"],
+        "name": "Nim Game",
+        "content": "You are playing the following Nim Game with your friend:\n- Initially, there is a heap of stones on the table.\n- You and your friend will alternate taking turns, and you go first.\n- On each turn, the person whose turn it is will remove 1 to 3 stones from the heap.\n- The one who removes the last stone is the winner.\n\nGiven `n`, the number of stones in the heap, return `true` if you can win the game assuming both you and your friend play optimally, otherwise return `false`."
+    },
+    {
+        "id": 293,
+        "difficulty": "Medium",
+        "topics": ["String", "Dynamic Programming"],
+        "name": "Flip Game",
+        "content": "You are playing a Flip Game with your friend. You are given a string `currentState` that contains only `'+'` and `'-'`. You and your friend take turns to flip two consecutive `\"++"` into `\"--\"`. The game ends when a person can no longer make a move, and therefore the other person will be the winner.\n\nReturn all possible states of the string `currentState` after one valid move."
+    },
+    {
+        "id": 294,
+        "difficulty": "Medium",
+        "topics": ["Math", "Dynamic Programming", "Backtracking", "Game Theory"],
+        "name": "Flip Game II",
+        "content": "You are playing a Flip Game with your friend. You are given a string `currentState` that contains only `'+'` and `'-'`. You and your friend take turns to flip two consecutive `\"++"` into `\"--\"`. The game ends when a person can no longer make a move, and therefore the other person will be the winner.\n\nReturn `true` if you can win the game starting with the given string `currentState`, assuming both players play optimally."
+    },
+    {
+        "id": 295,
+        "difficulty": "Hard",
+        "topics": ["Two Pointers", "Design", "Sorting", "Heap (Priority Queue)", "Data Stream"],
+        "name": "Find Median from Data Stream",
+        "content": "The median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value and the median is the mean of the two middle values.\n\nImplement the MedianFinder class:\n- `MedianFinder()` initializes the MedianFinder object.\n- `void addNum(int num)` adds the integer num from the data stream to the data structure.\n- `double findMedian()` returns the median of all elements so far."
+    },
+    {
+        "id": 296,
+        "difficulty": "Hard",
+        "topics": ["Array", "Math", "Dynamic Programming"],
+        "name": "Best Meeting Point",
+        "content": "Given an `m x n` binary grid `grid` where each `1` marks the home of one friend, return the minimal total travel distance.\n\nThe total travel distance is the sum of the distances between the houses of the friends and the meeting point.\n\nThe distance is calculated using Manhattan Distance, where `distance(p1, p2) = |p2.x - p1.x| + |p2.y - p1.y|`."
+    },
+    {
+        "id": 297,
+        "difficulty": "Hard",
+        "topics": ["String", "Tree", "Depth-First Search", "Breadth-First Search", "Design", "Binary Tree"],
+        "name": "Serialize and Deserialize Binary Tree",
+        "content": "Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.\n\nDesign an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure."
+    },
+    {
+        "id": 298,
+        "difficulty": "Medium",
+        "topics": ["Tree", "Depth-First Search", "Binary Tree"],
+        "name": "Binary Tree Longest Consecutive Sequence",
+        "content": "Given the `root` of a binary tree, return the length of the longest consecutive sequence path.\n\nA consecutive sequence path is a path where the values increase by one along the path.\n\nNote that the path can start at any node in the binary tree, and you cannot go from a node to its parent in the path."
+    },
+    {
+        "id": 299,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "String"],
+        "name": "Bulls and Cows",
+        "content": "You are playing the Bulls and Cows game with your friend.\n\nYou write down a secret number and ask your friend to guess what the number is. When your friend makes a guess, you provide a hint with the following info:\n- The number of \"bulls\", which are digits in the guess that are in the correct position.\n- The number of \"cows\", which are digits in the guess that are in your secret number but are located in the wrong position.\n\nGiven the secret number `secret` and your friend's guess `guess`, return the hint for your friend's guess."
+    },
+    {
+        "id": 300,
+        "difficulty": "Hard",
+        "topics": ["Array", "Dynamic Programming"],
+        "name": "Longest Increasing Subsequence II",
+        "content": "Given an integer array `nums` and an integer `k`, return the length of the longest subsequence of `nums` that is strictly increasing and has a difference of at most `k` between any two consecutive elements.\n\nA subsequence is a sequence that can be derived from an array by deleting some or no elements without changing the order of the remaining elements."
+    }
+]

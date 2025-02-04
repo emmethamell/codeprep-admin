@@ -1,0 +1,702 @@
+[
+    {
+        "id": 401,
+        "difficulty": "Medium",
+        "topics": ["Backtracking", "Bit Manipulation"],
+        "name": "Binary Watch",
+        "content": "A binary watch has 4 LEDs on the top to represent the hours (0-11), and 6 LEDs on the bottom to represent the minutes (0-59). Each LED represents a zero or one, with the least significant bit on the right.\n\nGiven an integer turnedOn which represents the number of LEDs that are currently on, return all possible times the watch could represent. You may return the answer in any order."
+    },
+    {
+        "id": 402,
+        "difficulty": "Medium",
+        "topics": ["Array", "Dynamic Programming", "Greedy"],
+        "name": "Remove K Digits",
+        "content": "Given string num representing a non-negative integer num, and an integer k, return the smallest possible integer after removing k digits from num."
+    },
+    {
+        "id": 403,
+        "difficulty": "Hard",
+        "topics": ["Array", "Dynamic Programming"],
+        "name": "Frog Jump",
+        "content": "A frog is crossing a river. The river is divided into some number of units, and at each unit, there may or may not exist a stone. The frog can jump on a stone, but it must not jump into the water.\n\nGiven a list of stones' positions (in units) in sorted ascending order, determine if the frog can cross the river by landing on the last stone. Initially, the frog is on the first stone and assumes the first jump must be 1 unit.\n\nIf the frog's last jump was k units, its next jump must be either k - 1, k, or k + 1 units. The frog can only jump in the forward direction."
+    },
+    {
+        "id": 404,
+        "difficulty": "Easy",
+        "topics": ["Tree", "Depth-First Search", "Binary Tree"],
+        "name": "Sum of Left Leaves",
+        "content": "Given the root of a binary tree, return the sum of all left leaves."
+    },
+    {
+        "id": 405,
+        "difficulty": "Easy",
+        "topics": ["Math"],
+        "name": "Convert a Number to Hexadecimal",
+        "content": "Given an integer num, return a string representing its hexadecimal representation. For negative integers, two's complement method is used.\n\nAll the letters in the answer string should be lowercase characters, and there should not be any leading zeros in the answer except for the zero itself."
+    },
+    {
+        "id": 406,
+        "difficulty": "Medium",
+        "topics": ["Array", "Greedy", "Sorting"],
+        "name": "Queue Reconstruction by Height",
+        "content": "You are given an array of people, people, which are the attributes of some people in a queue (not necessarily in order). Each people[i] = [hi, ki] represents the ith person:\n- hi is the height of the ith person\n- ki is the number of people whose height is greater than or equal to hi and who are in front of the ith person\n\nReconstruct and return the queue that is represented by the input array people. The returned queue should be formatted as an array queue, where queue[j] = [hj, kj] is the attributes of the jth person in the queue (queue[0] is the person at the front of the queue)."
+    },
+    {
+        "id": 407,
+        "difficulty": "Hard",
+        "topics": ["Array", "Breadth-First Search", "Heap (Priority Queue)"],
+        "name": "Trapping Rain Water II",
+        "content": "Given an m x n integer matrix heightMap representing the height of each unit cell in a 2D elevation map, return the volume of water it can trap after raining."
+    },
+    {
+        "id": 408,
+        "difficulty": "Easy",
+        "topics": ["String"],
+        "name": "Valid Word Abbreviation",
+        "content": "A string can be abbreviated by replacing any number of non-adjacent, non-empty substrings with their lengths. The lengths should not have leading zeros.\n\nGiven a string word and an abbreviation abbr, return whether the string matches the given abbreviation."
+    },
+    {
+        "id": 409,
+        "difficulty": "Easy",
+        "topics": ["Hash Table", "String", "Greedy"],
+        "name": "Longest Palindrome",
+        "content": "Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.\n\nLetters are case sensitive, for example, \"Aa\" is not considered a palindrome here."
+    },
+    {
+        "id": 410,
+        "difficulty": "Hard",
+        "topics": ["Array", "Binary Search", "Dynamic Programming", "Greedy"],
+        "name": "Split Array Largest Sum",
+        "content": "Given an array nums which consists of non-negative integers and an integer m, you can split the array into m non-empty continuous subarrays.\n\nWrite an algorithm to minimize the largest sum among these m subarrays."
+    },
+    {
+        "id": 411,
+        "difficulty": "Hard",
+        "topics": ["String", "Dynamic Programming"],
+        "name": "Minimum Unique Word Abbreviation",
+        "content": "A string can be abbreviated by replacing any number of non-adjacent, non-empty substrings with their lengths. The lengths should not have leading zeros.\n\nGiven a target string target and an array of strings dictionary, return the minimum possible length of an abbreviation of target such that it is not an abbreviation of any string in dictionary."
+    },
+    {
+        "id": 412,
+        "difficulty": "Easy",
+        "topics": ["Math", "String", "Simulation"],
+        "name": "Fizz Buzz",
+        "content": "Given an integer n, return a string array answer (1-indexed) where:\n- answer[i] == \"FizzBuzz\" if i is divisible by 3 and 5.\n- answer[i] == \"Fizz\" if i is divisible by 3.\n- answer[i] == \"Buzz\" if i is divisible by 5.\n- answer[i] == i (as a string) if none of the above conditions are true."
+    },
+    {
+        "id": 413,
+        "difficulty": "Medium",
+        "topics": ["Array", "Dynamic Programming"],
+        "name": "Arithmetic Slices",
+        "content": "An integer array is called arithmetic if it consists of at least three elements and if the difference between any two consecutive elements is the same.\n\nGiven an integer array nums, return the number of arithmetic subarrays of nums."
+    },
+    {
+        "id": 414,
+        "difficulty": "Easy",
+        "topics": ["Array", "Sorting"],
+        "name": "Third Maximum Number",
+        "content": "Given an integer array nums, return the third distinct maximum number in this array. If the third maximum does not exist, return the maximum number."
+    },
+    {
+        "id": 415,
+        "difficulty": "Easy",
+        "topics": ["Math", "String", "Simulation"],
+        "name": "Add Strings",
+        "content": "Given two non-negative integers num1 and num2 represented as string, return the sum of num1 and num2.\n\nNote:\n1. The length of both num1 and num2 is < 5100.\n2. Both num1 and num2 contains only digits 0-9.\n3. Both num1 and num2 does not contain any leading zero.\n4. You must not use any built-in BigInteger library or convert the inputs to integer directly."
+    },
+    {
+        "id": 416,
+        "difficulty": "Medium",
+        "topics": ["Array", "Dynamic Programming"],
+        "name": "Partition Equal Subset Sum",
+        "content": "Given a non-empty array nums containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal."
+    },
+    {
+        "id": 417,
+        "difficulty": "Medium",
+        "topics": ["Array", "Depth-First Search", "Breadth-First Search", "Matrix"],
+        "name": "Pacific Atlantic Water Flow",
+        "content": "There is an m x n rectangular island that borders both the Pacific Ocean and Atlantic Ocean. The Pacific Ocean touches the island's left and top edges, and the Atlantic Ocean touches the island's right and bottom edges.\n\nThe island is partitioned into a grid of square cells. You are given an m x n integer matrix heights where heights[r][c] represents the height above sea level of the cell at coordinate (r, c).\n\nThe island receives a lot of rain, and the rain water can flow to neighboring cells directly north, south, east, and west if the neighboring cell's height is less than or equal to the current cell's height. Water can only flow from a cell to an ocean directly if the cell is on the border of the island.\n\nReturn a 2D list of grid coordinates result where result[i] = [ri, ci] denotes that rain water can flow from cell (ri, ci) to both the Pacific and Atlantic oceans."
+    },
+    {
+        "id": 418,
+        "difficulty": "Medium",
+        "topics": ["Array", "String", "Matrix"],
+        "name": "Sentence Screen Fitting",
+        "content": "Given a rows x cols screen and a sentence represented as a list of strings, return the number of times the given sentence can be fitted on the screen.\n\nThe order of words in the sentence must remain unchanged, and a word cannot be split into two lines. A single space must separate two consecutive words in a line."
+    },
+    {
+        "id": 419,
+        "difficulty": "Medium",
+        "topics": ["Array", "Matrix"],
+        "name": "Battleships in a Board",
+        "content": "Given an m x n matrix board where each cell is a battleship 'X' or empty '.', return the number of the battleships on board.\n\nBattleships can only be placed horizontally or vertically on board. In other words, they can only be made of the shape 1 x k (1 row, k columns) or k x 1 (k rows, 1 column), where k can be of any size. At least one horizontal or vertical cell separates between two battleships (i.e., there are no adjacent battleships)."
+    },
+    {
+        "id": 420,
+        "difficulty": "Hard",
+        "topics": ["Math", "Dynamic Programming"],
+        "name": "Strong Password Checker",
+        "content": "A password is considered strong if the following criteria are all met:\n- It has at least 6 characters and at most 20 characters.\n- It contains at least one lowercase letter, at least one uppercase letter, and at least one digit.\n- It does not contain three repeating characters in a row (i.e., \"...aaa...\" is weak, but \"...aa...a...\" is strong).\n\nGiven a string password, return the minimum number of steps required to make password strong. if password is already strong, return 0."
+    },
+    {
+        "id": 421,
+        "difficulty": "Medium",
+        "topics": ["Array", "Hash Table", "Bit Manipulation"],
+        "name": "Maximum XOR of Two Numbers in an Array",
+        "content": "Given an integer array nums, return the maximum result of nums[i] XOR nums[j], where 0 <= i <= j < n."
+    },
+    {
+        "id": 422,
+        "difficulty": "Easy",
+        "topics": ["Array", "Matrix"],
+        "name": "Valid Word Square",
+        "content": "Given an array of strings words, return true if it forms a valid word square.\n\nA sequence of strings forms a valid word square if the kth row and column read the same string, where 0 ≤ k < max(numRows, numColumns)."
+    },
+    {
+        "id": 423,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "String"],
+        "name": "Reconstruct Original Digits from English",
+        "content": "Given a string s containing an out-of-order English representation of digits 0-9, return the digits in ascending order."
+    },
+    {
+        "id": 424,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "String", "Sliding Window"],
+        "name": "Longest Repeating Character Replacement",
+        "content": "You are given a string s and an integer k. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most k times.\n\nReturn the length of the longest substring containing the same letter you can get after performing the above operations."
+    },
+    {
+        "id": 425,
+        "difficulty": "Hard",
+        "topics": ["String", "Dynamic Programming", "Backtracking", "Trie"],
+        "name": "Word Squares",
+        "content": "Given an array of unique strings words, return all the word squares you can build from words. The same word may be reused multiple times.\n\nA sequence of strings forms a valid word square if the kth row and column read the same string, where 0 ≤ k < max(numRows, numColumns).\n- For example, the word sequence [\"ball\",\"area\",\"lead\",\"lady\"] forms a word square because each word reads the same both horizontally and vertically."
+    },
+    {
+        "id": 426,
+        "difficulty": "Medium",
+        "topics": ["Tree", "Depth-First Search", "Binary Tree"],
+        "name": "Convert Binary Search Tree to Sorted Doubly Linked List",
+        "content": "Convert a Binary Search Tree to a sorted Circular Doubly-Linked List in place.\n\nYou can think of the left and right pointers as synonymous to the predecessor and successor pointers in a doubly-linked list. For a circular doubly linked list, the predecessor of the first element is the last element, and the successor of the last element is the first element."
+    },
+    {
+        "id": 427,
+        "difficulty": "Medium",
+        "topics": ["Array", "Divide and Conquer", "Tree", "Matrix", "Quad Tree"],
+        "name": "Construct Quad Tree",
+        "content": "Given a n * n matrix grid of 0's and 1's only. We want to represent the grid with a Quad-Tree.\n\nReturn the root of the Quad-Tree representing the grid."
+    },
+    {
+        "id": 428,
+        "difficulty": "Hard",
+        "topics": ["Tree", "Depth-First Search", "Breadth-First Search"],
+        "name": "Serialize and Deserialize N-ary Tree",
+        "content": "Design an algorithm to serialize and deserialize an N-ary tree. An N-ary tree is a rooted tree in which each node has no more than N children. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that an N-ary tree can be serialized to a string and this string can be deserialized to the original tree structure."
+    },
+    {
+        "id": 429,
+        "difficulty": "Medium",
+        "topics": ["Tree", "Breadth-First Search"],
+        "name": "N-ary Tree Level Order Traversal",
+        "content": "Given an n-ary tree, return the level order traversal of its nodes' values.\n\nNary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value."
+    },
+    {
+        "id": 430,
+        "difficulty": "Medium",
+        "topics": ["Linked List", "Doubly-Linked List"],
+        "name": "Flatten a Multilevel Doubly Linked List",
+        "content": "You are given a doubly linked list, which contains nodes that have a next pointer, a previous pointer, and an additional child pointer. This child pointer may or may not point to a separate doubly linked list, also containing these special nodes. These child lists may have one or more children of their own, and so on, to produce a multilevel data structure as shown in the example below.\n\nFlatten the list so that all the nodes appear in a single-level, doubly linked list. You are given the head of the first level of the list."
+    },
+    {
+        "id": 431,
+        "difficulty": "Hard",
+        "topics": ["Array", "Dynamic Programming"],
+        "name": "Encode N-ary Tree to Binary Tree",
+        "content": "Design an algorithm to encode an N-ary tree into a binary tree and decode the binary tree to get the original N-ary tree. An N-ary tree is a rooted tree in which each node has no more than N children. Similarly, a binary tree is a rooted tree in which each node has no more than 2 children. There is no restriction on how your encode/decode algorithm should work. You just need to ensure that an N-ary tree can be encoded to a binary tree and this binary tree can be decoded to the original N-nary tree structure."
+    },
+    {
+        "id": 432,
+        "difficulty": "Hard",
+        "topics": ["Hash Table", "Linked List", "Design", "Doubly-Linked List"],
+        "name": "All O`one Data Structure",
+        "content": "Design a data structure to store the strings' count with the ability to return the strings with minimum and maximum counts.\n\nImplement the AllOne class:\n- AllOne() Initializes the object of the data structure.\n- inc(String key) Increments the count of the string key by 1. If key does not exist, insert it with count 1.\n- dec(String key) Decrements the count of the string key by 1. If the count of key is 0 after the decrement, remove it from the data structure. It is guaranteed that key exists.\n- getMaxKey() Returns one of the keys with the maximal count. If no element exists, return an empty string \"\".\n- getMinKey() Returns one of the keys with the minimum count. If no element exists, return an empty string \"\"."
+    },
+    {
+        "id": 433,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "String", "Breadth-First Search"],
+        "name": "Minimum Genetic Mutation",
+        "content": "A gene string can be represented by an 8-character long string, with choices from 'A', 'C', 'G', and 'T'.\n\nSuppose we need to investigate a mutation from a gene string start to a gene string end where one mutation is defined as one single character changed in the gene string.\n- For example, \"AACCGGTT\" --> \"AACCGGTA\" is one mutation.\n\nThere is also a gene bank bank that records all the valid gene mutations. A gene must be in bank to make it a valid gene string.\n\nGiven the two gene strings start and end and the gene bank bank, return the minimum number of mutations needed to mutate from start to end. If there is no such a mutation, return -1."
+    },
+    {
+        "id": 434,
+        "difficulty": "Easy",
+        "topics": ["String"],
+        "name": "Number of Segments in a String",
+        "content": "Given a string s, return the number of segments in the string.\n\nA segment is defined to be a contiguous sequence of non-space characters."
+    },
+    {
+        "id": 435,
+        "difficulty": "Medium",
+        "topics": ["Array", "Dynamic Programming", "Greedy", "Sorting"],
+        "name": "Non-overlapping Intervals",
+        "content": "Given an array of intervals intervals where intervals[i] = [starti, endi], return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping."
+    },
+    {
+        "id": 436,
+        "difficulty": "Medium",
+        "topics": ["Array", "Hash Table", "Binary Search"],
+        "name": "Find Right Interval",
+        "content": "You are given an array of intervals, where intervals[i] = [starti, endi] and each starti is unique.\n\nThe right interval for an interval i is an interval j such that startj >= endi and startj is minimized. Note that i may equal j.\n\nReturn an array of right interval indices for each interval i. If no right interval exists for interval i, then put -1 at index i."
+    },
+    {
+        "id": 437,
+        "difficulty": "Medium",
+        "topics": ["Tree", "Depth-First Search", "Binary Tree"],
+        "name": "Path Sum III",
+        "content": "Given the root of a binary tree and an integer targetSum, return the number of paths where the sum of the values along the path equals targetSum.\n\nThe path does not need to start or end at the root or a leaf, but it must go downwards (i.e., traveling only from parent nodes to child nodes)."
+    },
+    {
+        "id": 438,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "String", "Sliding Window"],
+        "name": "Find All Anagrams in a String",
+        "content": "Given two strings s and p, return an array of all the start indices of p's anagrams in s. You may return the answer in any order.\n\nAn Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once."
+    },
+    {
+        "id": 439,
+        "difficulty": "Medium",
+        "topics": ["String", "Dynamic Programming"],
+        "name": "Ternary Expression Parser",
+        "content": "Given a string expression representing arbitrarily nested ternary expressions, evaluate the expression, and return the result of it.\n\nThe ternary expression in the string has the format: expression ? value1 : value2, where expression, value1, and value2 are string expressions that can contain nested ternary expressions."
+    },
+    {
+        "id": 440,
+        "difficulty": "Hard",
+        "topics": ["Math", "Dynamic Programming"],
+        "name": "K-th Smallest in Lexicographical Order",
+        "content": "Given two integers n and k, return the kth lexicographically smallest integer in the range [1, n]."
+    },
+    {
+        "id": 441,
+        "difficulty": "Medium",
+        "topics": ["Array", "Binary Search"],
+        "name": "Arranging Coins",
+        "content": "You have n coins and you want to build a staircase with these coins. The staircase consists of k rows where the ith row has exactly i coins. The last row of the staircase may be incomplete.\n\nGiven the integer n, return the number of complete rows of the staircase you will build."
+    },
+    {
+        "id": 442,
+        "difficulty": "Medium",
+        "topics": ["Array", "Hash Table"],
+        "name": "Find All Duplicates in an Array",
+        "content": "Given an integer array nums of length n where all the integers of nums are in the range [1, n] and each integer appears once or twice, return an array of all the integers that appears twice.\n\nYou must write an algorithm that runs in O(n) time and uses only constant extra space."
+    },
+    {
+        "id": 443,
+        "difficulty": "Medium",
+        "topics": ["Two Pointers", "String"],
+        "name": "String Compression",
+        "content": "Given an array of characters chars, compress it using the following algorithm:\n\nBegin with an empty string s. For each group of consecutive repeating characters in chars:\n- If the group's length is 1, append the character to s.\n- Otherwise, append the character followed by the group's length.\n\nThe compressed string s should not be returned separately, but instead, be stored in the input character array chars. Note that group lengths that are 10 or longer will be split into multiple characters in chars.\n\nAfter you are done modifying the input array, return the new length of the array."
+    },
+    {
+        "id": 444,
+        "difficulty": "Hard",
+        "topics": ["Tree", "Depth-First Search", "Graph"],
+        "name": "Sequence Reconstruction",
+        "content": "You are given an integer array nums of length n where nums is a permutation of the integers in the range [1, n]. You are also given a 2D integer array sequences where sequences[i] is a subsequence of nums.\n\nCheck if nums is the shortest possible sequence that has all the subsequences in sequences[i]. If there are multiple answers, return true if nums is the lexicographically smallest one. Otherwise, return false.\n\nA subsequence is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements."
+    },
+    {
+        "id": 445,
+        "difficulty": "Medium",
+        "topics": ["Linked List", "Math", "Stack"],
+        "name": "Add Two Numbers II",
+        "content": "You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.\n\nYou may assume the two numbers do not contain any leading zero, except the number 0 itself."
+    },
+    {
+        "id": 446,
+        "difficulty": "Hard",
+        "topics": ["Array", "Dynamic Programming"],
+        "name": "Arithmetic Slices II - Subsequence",
+        "content": "Given an integer array nums, return the number of all the arithmetic subsequences of nums.\n\nA sequence of numbers is called arithmetic if it consists of at least three elements and if the difference between any two consecutive elements is the same.\n- For example, [1, 3, 5, 7, 9], [7, 7, 7, 7], and [3, -1, -5, -9] are arithmetic sequences.\n- For example, [1, 1, 2, 5, 7] is not an arithmetic sequence.\n\nA subsequence of an array is a sequence that can be formed by removing some elements (possibly none) of the array.\n- For example, [2,5,10] is a subsequence of [1,2,1,2,4,1,5,10].\n\nThe test cases are generated so that the answer fits in 32-bit integer."
+    },
+    {
+        "id": 447,
+        "difficulty": "Medium",
+        "topics": ["Array", "Hash Table", "Math"],
+        "name": "Number of Boomerangs",
+        "content": "You are given n points in the plane that are all distinct, where points[i] = [xi, yi]. A boomerang is a tuple of points (i, j, k) such that the distance between i and j equals the distance between i and k (the order of the tuple matters).\n\nReturn the number of boomerangs."
+    },
+    {
+        "id": 448,
+        "difficulty": "Easy",
+        "topics": ["Array", "Hash Table"],
+        "name": "Find All Numbers Disappeared in an Array",
+        "content": "Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums."
+    },
+    {
+        "id": 449,
+        "difficulty": "Medium",
+        "topics": ["String", "Tree", "Depth-First Search", "Breadth-First Search", "Design", "Binary Search Tree", "Binary Tree"],
+        "name": "Serialize and Deserialize BST",
+        "content": "Serialization is converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.\n\nDesign an algorithm to serialize and deserialize a binary search tree. There is no restriction on how your serialization/deserialization algorithm should work. You need to ensure that a binary search tree can be serialized to a string, and this string can be deserialized to the original tree structure."
+    },
+    {
+        "id": 450,
+        "difficulty": "Medium",
+        "topics": ["Tree", "Binary Search Tree", "Binary Tree"],
+        "name": "Delete Node in a BST",
+        "content": "Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.\n\nBasically, the deletion can be divided into two stages:\n1. Search for a node to remove.\n2. If the node is found, delete the node."
+    },
+    {
+        "id": 451,
+        "difficulty": "Medium",
+        "topics": ["Hash Table", "String", "Sorting", "Heap (Priority Queue)", "Bucket Sort", "Counting"],
+        "name": "Sort Characters By Frequency",
+        "content": "Given a string s, sort it in decreasing order based on the frequency of the characters. The frequency of a character is the number of times it appears in the string.\n\nReturn the sorted string. If there are multiple answers, return any of them."
+    },
+    {
+        "id": 452,
+        "difficulty": "Medium",
+        "topics": ["Array", "Greedy", "Sorting"],
+        "name": "Minimum Number of Arrows to Burst Balloons",
+        "content": "There are some spherical balloons taped onto a flat wall that represents the XY-plane. The balloons are represented as a 2D integer array points where points[i] = [xstart, xend] denotes a balloon whose horizontal diameter stretches between xstart and xend. You do not know the exact y-coordinates of the balloons.\n\nArrows can be shot up directly vertically (in the positive y-direction) from different points along the x-axis. A balloon with xstart and xend is burst by an arrow shot at x if xstart ≤ x ≤ xend. There is no limit to the number of arrows that can be shot. A shot arrow keeps traveling up infinitely.\n\nGiven the array points, return the minimum number of arrows that must be shot to burst all balloons."
+    },
+    {
+        "id": 453,
+        "difficulty": "Easy",
+        "topics": ["Array", "Math"],
+        "name": "Minimum Moves to Equal Array Elements",
+        "content": "Given an integer array nums of size n, return the minimum number of moves required to make all array elements equal.\n\nIn one move, you can increment n - 1 elements of the array by 1."
+    },
+    {
+        "id": 454,
+        "difficulty": "Medium",
+        "topics": ["Array", "Hash Table"],
+        "name": "4Sum II",
+        "content": "Given four integer arrays nums1, nums2, nums3, and nums4 all of length n, return the number of tuples (i, j, k, l) such that:\n- 0 <= i, j, k, l < n\n- nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0"
+    },
+    {
+        "id": 455,
+        "difficulty": "Easy",
+        "topics": ["Array", "Greedy", "Sorting"],
+        "name": "Assign Cookies",
+        "content": "Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie.\n\nEach child i has a greed factor g[i], which is the minimum size of a cookie that the child will be content with; and each cookie j has a size s[j]. If s[j] >= g[i], we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number."
+    },
+    {
+        "id": 456,
+        "difficulty": "Medium",
+        "topics": ["Array", "Stack", "Monotonic Stack"],
+        "name": "132 Pattern",
+        "content": "Given an array of n integers nums, a 132 pattern is a subsequence of three integers nums[i], nums[j] and nums[k] such that i < j < k and nums[i] < nums[k] < nums[j].\n\nReturn true if there is a 132 pattern in nums, otherwise, return false."
+    },
+    {
+        "id": 457,
+        "difficulty": "Medium",
+        "topics": ["Array", "Two Pointers"],
+        "name": "Circular Array Loop",
+        "content": "You are playing a game involving a circular array of non-zero integers nums. Each nums[i] denotes the number of indices forward/backward you must move if you are located at index i:\n- If nums[i] is positive, move nums[i] steps forward, and\n- If nums[i] is negative, move nums[i] steps backward.\n\nSince the array is circular, you may assume that moving forward from the last element puts you on the first element, and moving backwards from the first element puts you on the last element.\n\nA cycle in the array consists of a sequence of indices seq of length k where:\n- Following the movement rules above results in the repeating index sequence seq[0] -> seq[1] -> ... -> seq[k - 1] -> seq[0] -> ...\n- Every nums[seq[j]] is either all positive or all negative.\n- k > 1\n\nReturn true if there is a cycle in nums, or false otherwise."
+    },
+    {
+        "id": 458,
+        "difficulty": "Hard",
+        "topics": ["Math", "Dynamic Programming"],
+        "name": "Poor Pigs",
+        "content": "There are buckets buckets of liquid, where exactly one of the buckets is poisonous. To figure out which one is poisonous, you feed some number of (poor) pigs the liquid to see whether they will die or not. Unfortunately, you only have minutesToTest minutes to determine which bucket is poisonous.\n\nYou can feed the pigs according to these steps:\n1. Choose some live pigs to feed.\n2. For each pig, choose which buckets to feed it. The pig will consume all the chosen buckets simultaneously and will take no time.\n3. Wait for minutesToDie minutes. You may not feed any other pigs during this time.\n4. After minutesToDie minutes have passed, any pigs that have been fed the poisonous bucket will die, and all others will survive.\n5. Repeat this process until you run out of time.\n\nGiven buckets, minutesToDie, and minutesToTest, return the minimum number of pigs needed to figure out which bucket is poisonous within the allotted time."
+    },
+    {
+        "id": 459,
+        "difficulty": "Easy",
+        "topics": ["String", "String Matching"],
+        "name": "Repeated Substring Pattern",
+        "content": "Given a string s, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together."
+    },
+    {
+        "id": 460,
+        "difficulty": "Hard",
+        "topics": ["Hash Table", "Linked List", "Design", "Doubly-Linked List"],
+        "name": "LFU Cache",
+        "content": "Design and implement a data structure for a Least Frequently Used (LFU) cache.\n\nImplement the LFUCache class:\n- LFUCache(int capacity) Initializes the object with the capacity of the data structure.\n- int get(int key) Gets the value of the key if the key exists in the cache. Otherwise, returns -1.\n- void put(int key, int value) Update the value of the key if present, or inserts the key if not already present. When the cache reaches its capacity, it should invalidate and remove the least frequently used key before inserting a new item. For this problem, when there is a tie (i.e., two or more keys with the same frequency), the least recently used key would be invalidated."
+    },
+    {
+        "id": 461,
+        "difficulty": "Easy",
+        "topics": ["Bit Manipulation"],
+        "name": "Hamming Distance",
+        "content": "The Hamming distance between two integers is the number of positions at which the corresponding bits are different.\n\nGiven two integers x and y, return the Hamming distance between them."
+    },
+    {
+        "id": 462,
+        "difficulty": "Medium",
+        "topics": ["Array", "Math", "Sorting"],
+        "name": "Minimum Moves to Equal Array Elements II",
+        "content": "Given an integer array nums of size n, return the minimum number of moves required to make all array elements equal.\n\nIn one move, you can increment or decrement an element of the array by 1."
+    },
+    {
+        "id": 463,
+        "difficulty": "Easy",
+        "topics": ["Array", "Depth-First Search", "Breadth-First Search", "Matrix"],
+        "name": "Island Perimeter",
+        "content": "You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water.\n\nGrid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).\n\nThe island doesn't have \"lakes\", meaning the water inside isn't connected to the water around the island. One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island."
+    },
+    {
+        "id": 464,
+        "difficulty": "Medium",
+        "topics": ["Math", "Dynamic Programming", "Bit Manipulation", "Game Theory", "Memoization"],
+        "name": "Can I Win",
+        "content": "In the \"100 game\" two players take turns adding, to a running total, any integer from 1 to 10. The player who first causes the running total to reach or exceed 100 wins.\n\nWhat if we change the game so that players cannot re-use integers?\n\nFor example, two players might take turns drawing from a common pool of numbers from 1 to 15 without replacement until they reach a total >= 100.\n\nGiven two integers maxChoosableInteger and desiredTotal, return true if the first player to move can force a win, otherwise, return false. Assume both players play optimally."
+    },
+    {
+        "id": 465,
+        "difficulty": "Hard",
+        "topics": ["Array", "Dynamic Programming"],
+        "name": "Optimal Account Balancing",
+        "content": "You are given an array of transactions transactions where transactions[i] = [fromi, toi, amounti] indicates that the person with ID = fromi gave amounti $ to the person with ID = toi.\n\nReturn the minimum number of transactions required to settle the debt."
+    },
+    {
+        "id": 466,
+        "difficulty": "Hard",
+        "topics": ["Math", "Dynamic Programming"],
+        "name": "Count The Repetitions",
+        "content": "We define str = [s, n] as the string str which consists of the string s concatenated n times.\n\nFor example, str == [\"abc\", 3] =\"abcabcabc\".\n\nWe define that string s1 can be obtained from string s2 if we can remove some characters from s2 (i.e., s2 is a subsequence of s1).\n\nFor example, s1 = \"abc\" can be obtained from s2 = \"abdbec\" based on our definition by removing the characters \"d\" and \"e\".\n\nYou are given two strings s1 and s2 and two integers n1 and n2. Find the maximum integer m such that str = [s2, m] can be obtained from str = [s1, n1]."
+    },
+    {
+        "id": 467,
+        "difficulty": "Medium",
+        "topics": ["String", "Dynamic Programming"],
+        "name": "Unique Substrings in Wraparound String",
+        "content": "We define the string s to be the infinite wraparound string of \"abcdefghijklmnopqrstuvwxyz\", so s will look like this:\n\"...zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd....\".\n\nGiven a string p, return the number of unique non-empty substrings of p are present in s."
+    },
+    {
+        "id": 468,
+        "difficulty": "Medium",
+        "topics": ["String"],
+        "name": "Validate IP Address",
+        "content": "Given a string queryIP, return \"IPv4\" if IP is a valid IPv4 address, \"IPv6\" if IP is a valid IPv6 address or \"Neither\" if IP is not a correct IP of any type.\n\nA valid IPv4 address is an IP in the form \"x1.x2.x3.x4\" where 0 <= xi <= 255 and xi cannot contain leading zeros. For example, \"192.168.1.1\" and \"192.168.1.0\" are valid IPv4 addresses while \"192.168.01.1\", \"192.168.1.00\", and \"192.168@1.1\" are invalid IPv4 addresses.\n\nA valid IPv6 address is an IP in the form \"x1:x2:x3:x4:x5:x6:x7:x8\" where:\n- 1 <= xi.length <= 4\n- xi is a hexadecimal string which may contain digits, lowercase English letter ('a' to 'f') and upper-case English letters ('A' to 'F').\n- Leading zeros are allowed in xi.\n\nFor example, \"2001:0db8:85a3:0000:0000:8a2e:0370:7334\" and \"2001:db8:85a3:0:0:8A2E:0370:7334\" are valid IPv6 addresses, while \"2001:0db8:85a3::8A2E:037j:7334\" and \"02001:0db8:85a3:0000:0000:8a2e:0370:7334\" are invalid IPv6 addresses."
+    },
+    {
+        "id": 469,
+        "difficulty": "Medium",
+        "topics": ["Array", "Math", "Geometry"],
+        "name": "Convex Polygon",
+        "content": "You are given an array of points on the X-Y plane points where points[i] = [xi, yi]. A polygon is formed by connecting all the points in order and connecting the first point to the last point.\n\nReturn true if this polygon is convex and false otherwise."
+    },
+    {
+        "id": 470,
+        "difficulty": "Medium",
+        "topics": ["Math", "Binary Search", "Randomized"],
+        "name": "Implement Rand10() Using Rand7()",
+        "content": "Given the API rand7() that generates a uniform random integer in the range [1, 7], write a function rand10() that generates a uniform random integer in the range [1, 10]. You can only call the API rand7(), and you shouldn't call any other API. Please don't use a language's built-in random API.\n\nEach test case will have one internal argument n, the number of times that your implemented function rand10() will be called while testing. Note that this is not an argument passed to rand10().\n\nFollow up:\n- What is the expected value for the number of calls to rand7() function?\n- Could you minimize the number of calls to rand7()?"
+    },
+    {
+        "id": 471,
+        "difficulty": "Hard",
+        "topics": ["Array", "Dynamic Programming"],
+        "name": "Encode String with Shortest Length",
+        "content": "Given a string s, encode the string such that its encoded length is the shortest.\n\nThe encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. k should be a positive integer.\n\nIf an encoding process does not make the string shorter, then do not encode it. If there are several solutions, return any of them."
+    },
+    {
+        "id": 472,
+        "difficulty": "Hard",
+        "topics": ["Array", "String", "Dynamic Programming", "Trie"],
+        "name": "Concatenated Words",
+        "content": "Given an array of strings words (without duplicates), return all the concatenated words in the given list of words.\n\nA concatenated word is defined as a string that is comprised entirely of at least two shorter words in the given array."
+    },
+    {
+        "id": 473,
+        "difficulty": "Medium",
+        "topics": ["Array", "Dynamic Programming", "Backtracking"],
+        "name": "Matchsticks to Square",
+        "content": "You are given an integer array matchsticks where matchsticks[i] is the length of the ith matchstick. You want to use all the matchsticks to make one square. You should not break any stick, but you can link them up, and each matchstick must be used exactly one time.\n\nReturn true if you can make this square and false otherwise."
+    },
+    {
+        "id": 474,
+        "difficulty": "Medium",
+        "topics": ["Array", "String", "Dynamic Programming"],
+        "name": "Ones and Zeroes",
+        "content": "You are given an array of binary strings strs and two integers m and n.\n\nReturn the size of the largest subset of strs such that there are at most m 0's and n 1's in the subset.\n\nA set x is a subset of a set y if all elements of x are also elements of y."
+    },
+    {
+        "id": 475,
+        "difficulty": "Medium",
+        "topics": ["Array", "Binary Search"],
+        "name": "Heaters",
+        "content": "Winter is coming! During the contest, your first job is to design a standard heater with a fixed warm radius to warm all the houses.\n\nEvery house can be warmed, as long as the house is within the heater's warm radius range. \n\nGiven the positions of houses and heaters on a horizontal line, return the minimum radius standard of heaters so that those heaters could cover all houses."
+    },
+    {
+        "id": 476,
+        "difficulty": "Easy",
+        "topics": ["Bit Manipulation"],
+        "name": "Number Complement",
+        "content": "The complement of an integer is the integer you get when you flip all the 0's to 1's and all the 1's to 0's in its binary representation.\n\nFor example, The integer 5 is \"101\" in binary and its complement is \"010\" which is the integer 2.\nGiven an integer num, return its complement."
+    },
+    {
+        "id": 477,
+        "difficulty": "Medium",
+        "topics": ["Array", "Bit Manipulation"],
+        "name": "Total Hamming Distance",
+        "content": "The Hamming distance between two integers is the number of positions at which the corresponding bits are different.\n\nGiven an integer array nums, return the sum of Hamming distances between all the pairs of the integers in nums."
+    },
+    {
+        "id": 478,
+        "difficulty": "Medium",
+        "topics": ["Math", "Geometry", "Randomized"],
+        "name": "Generate Random Point in a Circle",
+        "content": "Given the radius and x-y positions of the center of a circle, implement the function randPoint which generates a uniform random point inside the circle.\n\nImplement the Solution class:\n- Solution(double radius, double x_center, double y_center) initializes the object with the radius of the circle radius and the position of the center (x_center, y_center).\n- randPoint() returns a random point inside the circle. A point on the circumference of the circle is considered to be in the circle. The answer is returned as an array [x, y]."
+    },
+    {
+        "id": 479,
+        "difficulty": "Hard",
+        "topics": ["Math"],
+        "name": "Largest Palindrome Product",
+        "content": "Given an integer n, return the largest palindromic integer that can be represented as the product of two n-digits integers. Since the answer can be very large, return it modulo 1337."
+    },
+    {
+        "id": 480,
+        "difficulty": "Hard",
+        "topics": ["Array", "Sliding Window"],
+        "name": "Sliding Window Median",
+        "content": "The median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle values.\n\nFor examples, if arr = [2,3,4], the median is 3.\nFor examples, if arr = [1,2,3,4], the median is (2 + 3) / 2 = 2.5.\n\nYou are given an integer array nums and an integer k. There is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.\n\nReturn the median array for each window in the original array. Answers within 10^-5 of the actual value will be accepted."
+    },
+    {
+        "id": 481,
+        "difficulty": "Medium",
+        "topics": ["Math", "Binary Search"],
+        "name": "Magical String",
+        "content": "A magical string `s` consists of only '1' and '2' and obeys the following rules:\n- The string `s` is magical because concatenating the number of contiguous occurrences of characters '1' and '2' generates the string `s` itself.\n\nThe first few elements of `s` is `s` = \"1221121221221121122...\". If we group the consecutive 1's and 2's in `s`, it will be \"1 22 11 2 1 22 1 22 11 2 11 22 ......\" and the occurrences of 1's or 2's in each group are: \"1 2 2 1 1 2 1 2 2 1 2 2 ......\"\n\nGiven an integer `n`, return the number of 1's in the first `n` number in the magical string `s`."
+    },
+    {
+        "id": 482,
+        "difficulty": "Medium",
+        "topics": ["Array", "String"],
+        "name": "License Key Formatting",
+        "content": "You are given a license key represented as a string `s` that consists of only alphanumeric characters and dashes. The string is separated into `n + 1` groups by `n` dashes. You are also given an integer `k`.\n\nWe want to reformat the string `s` such that each group contains exactly `k` characters, except for the first group, which could be shorter than `k` but still must contain at least one character. Furthermore, there must be a dash inserted between two groups, and you should convert all lowercase letters to uppercase.\n\nReturn the reformatted license key."
+    },
+    {
+        "id": 483,
+        "difficulty": "Hard",
+        "topics": ["Math", "Binary Search"],
+        "name": "Smallest Good Base",
+        "content": "Given an integer `n` represented as a string, return the smallest good base of `n`.\n\nWe call `k >= 2` a good base of `n`, if all digits of `n` base `k` are 1's."
+    },
+    {
+        "id": 484,
+        "difficulty": "Medium",
+        "topics": ["Array", "Union Find"],
+        "name": "Find Permutation",
+        "content": "A permutation `perm` of `n` integers of all the integers in the range `[1, n]` can be represented as a string `s` of length `n - 1` where:\n- `s[i] == 'I'` if `perm[i] < perm[i + 1]`, and\n- `s[i] == 'D'` if `perm[i] > perm[i + 1]`\n\nGiven a string `s`, reconstruct the lexicographically smallest permutation `perm` and return it."
+    },
+    {
+        "id": 485,
+        "difficulty": "Medium",
+        "topics": ["Array", "Sliding Window"],
+        "name": "Max Consecutive Ones",
+        "content": "Given a binary array `nums`, return the maximum number of consecutive 1's in the array."
+    },
+    {
+        "id": 486,
+        "difficulty": "Medium",
+        "topics": ["Array", "Dynamic Programming", "Game Theory"],
+        "name": "Predict the Winner",
+        "content": "You are given an integer array `nums`. Two players are playing a game with this array: player 1 and player 2.\n\nPlayer 1 and player 2 take turns, with player 1 starting first. Both players start the game with a score of 0. At each turn, the player takes one of the numbers from either end of the array (i.e., `nums[0]` or `nums[nums.length - 1]`) which reduces the size of the array by 1. The player adds the chosen number to their score. The game ends when there are no more elements in the array.\n\nReturn `true` if Player 1 can win the game. If the scores of both players are equal, then player 1 is still the winner, and you should also return `true`. You may assume that both players are playing optimally."
+    },
+    {
+        "id": 487,
+        "difficulty": "Medium",
+        "topics": ["String", "Sliding Window"],
+        "name": "Max Consecutive Ones II",
+        "content": "Given a binary array `nums`, return the maximum number of consecutive 1's in the array if you can flip at most one 0."
+    },
+    {
+        "id": 488,
+        "difficulty": "Hard",
+        "topics": ["String", "Breadth-First Search"],
+        "name": "Zuma Game",
+        "content": "You are playing a variation of the game Zuma.\n\nIn this variation of Zuma, there is a single row of colored balls on a board, where each ball can be colored red 'R', yellow 'Y', blue 'B', green 'G', or white 'W'. You also have several colored balls in your hand.\n\nYour goal is to clear all of the balls from the board. On each turn:\n- Pick any ball from your hand and insert it in between two balls in the row or on either end of the row.\n- If there is a group of three or more consecutive balls of the same color, remove the group of balls from the board.\n  - If this removal causes more groups of three or more of the same color to form, then continue removing each group until no such group exists.\n\nGiven a string `board`, representing the row of balls on the board, and a string `hand`, representing the balls in your hand, return the minimum number of balls you have to insert to clear all the balls from the board. If you cannot clear all the balls from the board, return -1."
+    },
+    {
+        "id": 489,
+        "difficulty": "Hard",
+        "topics": ["Array", "Depth-First Search", "Breadth-First Search", "Graph"],
+        "name": "Robot Room Cleaner",
+        "content": "You are controlling a robot that is located somewhere in a room. The room is modeled as an `m x n` binary grid where 0 represents a wall and 1 represents an empty slot.\n\nThe robot starts at an unknown location in the room that is guaranteed to be empty, and you do not have access to the grid, but you can move the robot using the given API `Robot`.\n\nYou are tasked to use the robot to clean the entire room (i.e., clean every empty cell in the room). The robot with the four given APIs can move forward, turn left, or turn right. Each turn is 90 degrees.\n\nWhen the robot tries to move into a wall cell, its bumper sensor detects the obstacle, and it stays on the current cell.\n\nDesign an algorithm to clean the entire room using the following APIs:\n- `interface Robot { boolean move(); void turnLeft(); void turnRight(); void clean(); }`"
+    },
+    {
+        "id": 490,
+        "difficulty": "Medium",
+        "topics": ["Depth-First Search", "Breadth-First Search", "Graph"],
+        "name": "The Maze",
+        "content": "There is a ball in a maze with empty spaces (represented as 0) and walls (represented as 1). The ball can go through empty spaces by rolling up, down, left or right, but it won't stop rolling until hitting a wall. When the ball stops, it could choose the next direction.\n\nGiven the `m x n` maze, the ball's start position and the destination, where `start = [startrow, startcol]` and `destination = [destinationrow, destinationcol]`, return `true` if the ball can stop at the destination, otherwise return `false`.\n\nYou may assume that the borders of the maze are all walls."
+    },
+    {
+        "id": 491,
+        "difficulty": "Medium",
+        "topics": ["Array", "Hash Table", "Backtracking"],
+        "name": "Non-decreasing Subsequences",
+        "content": "Given an integer array `nums`, return all the different possible non-decreasing subsequences of the given array with at least two elements. You may return the answer in any order."
+    },
+    {
+        "id": 492,
+        "difficulty": "Easy",
+        "topics": ["Math"],
+        "name": "Construct the Rectangle",
+        "content": "A web developer needs to know how to design a web page's size. So, given a specific rectangular web page's area, your job by now is to design a rectangular web page, whose length `L` and width `W` satisfy the following requirements:\n1. The area of the rectangular web page you designed must equal to the given target area.\n2. The width `W` should not be larger than the length `L`, which means `L >= W`.\n3. The difference between length `L` and width `W` should be as small as possible.\n\nReturn an array `[L, W]` where `L` and `W` are the length and width of the web page you designed in sequence."
+    },
+    {
+        "id": 493,
+        "difficulty": "Hard",
+        "topics": ["Array", "Binary Search", "Divide and Conquer", "Binary Indexed Tree", "Segment Tree", "Merge Sort"],
+        "name": "Reverse Pairs",
+        "content": "Given an integer array `nums`, return the number of reverse pairs in the array.\n\nA reverse pair is a pair `(i, j)` where:\n- 0 <= i < j < nums.length and\n- nums[i] > 2 * nums[j]."
+    },
+    {
+        "id": 494,
+        "difficulty": "Medium",
+        "topics": ["Array", "Dynamic Programming"],
+        "name": "Target Sum",
+        "content": "You are given an integer array `nums` and an integer `target`.\n\nYou want to build an expression out of nums by adding one of the symbols '+' and '-' before each integer in nums and then concatenate all the integers.\n- For example, if `nums = [2, 1]`, you can add a '+' before 2 and a '-' before 1 and concatenate them to build the expression \"+2-1\".\n\nReturn the number of different expressions that you can build, which evaluates to `target`."
+    },
+    {
+        "id": 495,
+        "difficulty": "Medium",
+        "topics": ["Array", "Simulation"],
+        "name": "Teemo Attacking",
+        "content": "Our hero Teemo is attacking an enemy Ashe with poison attacks! When Teemo attacks Ashe, Ashe gets poisoned for a exactly `duration` seconds. More formally, an attack at second `t` will mean Ashe is poisoned during the inclusive time interval `[t, t + duration - 1]`. If Teemo attacks again before the poison effect ends, the timer for it is reset, and the poison effect will end `duration` seconds after the new attack.\n\nYou are given a non-decreasing integer array `timeSeries`, where `timeSeries[i]` denotes that Teemo attacks Ashe at second `timeSeries[i]`, and an integer `duration`.\n\nReturn the total number of seconds that Ashe is poisoned."
+    },
+    {
+        "id": 496,
+        "difficulty": "Easy",
+        "topics": ["Array", "Hash Table", "Stack", "Monotonic Stack"],
+        "name": "Next Greater Element I",
+        "content": "The next greater element of some element `x` in an array is the first greater element that is to the right of `x` in the same array.\n\nYou are given two distinct 0-indexed integer arrays `nums1` and `nums2`, where `nums1` is a subset of `nums2`.\n\nFor each `0 <= i < nums1.length`, find the index `j` such that `nums1[i] == nums2[j]` and determine the next greater element of `nums2[j]` in `nums2`. If there is no next greater element, then the answer for this query is -1.\n\nReturn an array `ans` of length `nums1.length` such that `ans[i]` is the next greater element as described above."
+    },
+    {
+        "id": 497,
+        "difficulty": "Medium",
+        "topics": ["Array", "Math", "Binary Search", "Reservoir Sampling", "Prefix Sum", "Randomized"],
+        "name": "Random Point in Non-overlapping Rectangles",
+        "content": "You are given an array of non-overlapping axis-aligned rectangles `rects` where `rects[i] = [ai, bi, xi, yi]` indicates that `(ai, bi)` is the bottom-left corner point of the `ith` rectangle and `(xi, yi)` is the top-right corner point of the `ith` rectangle. Design an algorithm to pick a random integer point inside the space covered by all the given rectangles. A point on the perimeter of a rectangle is included in the space covered by the rectangle.\n\nAny integer point inside the space covered by the rectangles should be equally likely to be returned.\n\nImplement the `Solution` class:\n- `Solution(int[][] rects)` Initializes the object with the given rectangles `rects`.\n- `int[] pick()` Returns a random integer point `[u, v]` inside the space covered by the rectangles."
+    },
+    {
+        "id": 498,
+        "difficulty": "Medium",
+        "topics": ["Array", "Math"],
+        "name": "Diagonal Traverse",
+        "content": "Given an `m x n` matrix `mat`, return an array of all the elements of the array in a diagonal order."
+    },
+    {
+        "id": 499,
+        "difficulty": "Hard",
+        "topics": ["Array", "Math", "Dynamic Programming", "Game Theory"],
+        "name": "The Maze III",
+        "content": "There is a ball in a maze with empty spaces (represented as 0) and walls (represented as 1). The ball can go through empty spaces by rolling up (u), down (d), left (l) or right (r), but it won't stop rolling until hitting a wall. When the ball stops, it could choose the next direction. There is also a hole in this maze. The ball will drop into the hole if it rolls onto the hole.\n\nGiven the `m x n` maze, the ball's position `ball` and the hole's position `hole`, where `ball = [ballrow, ballcol]` and `hole = [holerow, holecol]`, return a string instructions of all the instructions that the ball should follow to drop in the hole with the shortest distance possible. If there are multiple valid instructions, return the lexicographically minimum one. If the ball can't reach the hole, return \"impossible\".\n\nIf there is a way for the ball to drop in the hole, the answer instructions should contain the characters 'u' (i.e., up), 'd' (i.e., down), 'l' (i.e., left), and 'r' (i.e., right).\n\nThe distance is the number of empty spaces traveled by the ball from the start position (excluded) to the destination (included)."
+    },
+    {
+        "id": 500,
+        "difficulty": "Medium",
+        "topics": ["String", "Stack"],
+        "name": "Keyboard Row",
+        "content": "Given an array of strings `words`, return the words that can be typed using letters of the alphabet on only one row of American keyboard.\n\nIn the American keyboard:\n- the first row consists of the characters \"qwertyuiop\",\n- the second row consists of the characters \"asdfghjkl\", and\n- the third row consists of the characters \"zxcvbnm\"."
+    }
+]
