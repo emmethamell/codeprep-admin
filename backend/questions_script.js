@@ -1,5 +1,7 @@
 import OpenAI from "openai"
 import dotenv from "dotenv"
+import { readFile, writeFile } from 'fs/promises';
+import { write } from "fs";
 dotenv.config()
 
 const openai = new OpenAI({
@@ -25,15 +27,16 @@ async function formatContent(question_content) {
 }
 
 
-async function main() {
-    const fs = require('fs').promises;
+async function main(file_name) {
 
-    const rawData = await fs.readFile('qs_1_to_200.json', 'utf8');
+    const rawData = await readFile(file_name, 'utf8');
     const data = JSON.parse(rawData);
 
     for (let i = 0; i < data.length; i++) {
         data[i].content = await formatContent(data[i].content); 
     }
 
-    fs.writeFileSync('qs_1_to_200.json', JSON.stringify(data, null, 2), 'utf8');
+    await writeFile(file_name, JSON.stringify(data, null, 2), 'utf8');
 }
+
+main('qs_1_to_200.json').catch(console.error);
