@@ -1,702 +1,1092 @@
 [
-    {
-        "id": 301,
-        "difficulty": "Hard",
-        "topics": ["String", "Backtracking"],
-        "name": "Remove Invalid Parentheses",
-        "content": "Given a string `s` that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.\n\nReturn all the possible results. You may return the answer in any order."
-    },
-    {
-        "id": 302,
-        "difficulty": "Hard",
-        "topics": ["Array", "Binary Search", "Matrix"],
-        "name": "Smallest Rectangle Enclosing Black Pixels",
-        "content": "You are given an `m x n` binary matrix `image` where `0` represents a white pixel and `1` represents a black pixel.\n\nThe black pixels are connected (i.e., there is only one black region). Pixels are connected horizontally and vertically.\n\nGiven two integers `x` and `y` that represents the location of one of the black pixels, return the area of the smallest (axis-aligned) rectangle that encloses all black pixels."
-    },
-    {
-        "id": 303,
-        "difficulty": "Easy",
-        "topics": ["Array", "Design", "Prefix Sum"],
-        "name": "Range Sum Query - Immutable",
-        "content": "Given an integer array `nums`, handle multiple queries of the following type:\n\nCalculate the sum of the elements of `nums` between indices `left` and `right` inclusive where `left <= right`.\n\nImplement the NumArray class:\n- `NumArray(int[] nums)` Initializes the object with the integer array nums.\n- `int sumRange(int left, int right)` Returns the sum of the elements of nums between indices left and right inclusive (i.e. `nums[left] + nums[left + 1] + ... + nums[right]`)."
-    },
-    {
-        "id": 304,
-        "difficulty": "Medium",
-        "topics": ["Array", "Design", "Matrix", "Prefix Sum"],
-        "name": "Range Sum Query 2D - Immutable",
-        "content": "Given a 2D matrix `matrix`, handle multiple queries of the following type:\n\nCalculate the sum of the elements of `matrix` inside the rectangle defined by its upper left corner `(row1, col1)` and lower right corner `(row2, col2)`.\n\nImplement the NumMatrix class:\n- `NumMatrix(int[][] matrix)` Initializes the object with the integer matrix matrix.\n- `int sumRegion(int row1, int col1, int row2, int col2)` Returns the sum of the elements of matrix inside the rectangle defined by its upper left corner `(row1, col1)` and lower right corner `(row2, col2)`."
-    },
-    {
-        "id": 305,
-        "difficulty": "Hard",
-        "topics": ["Array", "Union Find"],
-        "name": "Number of Islands II",
-        "content": "You are given an empty 2D binary grid `grid` of size `m x n`. The grid represents a map where `0`'s represent water and `1`'s represent land. Initially, all the cells of grid are water cells (i.e., all the cells are `0`).\n\nWe may perform an add land operation which turns the water at position into a land. You are given an array `positions` where `positions[i] = [ri, ci]` is the position `(ri, ci)` at which we should operate the ith operation.\n\nReturn an array of integers `answer` where `answer[i]` is the number of islands after turning the cell `(ri, ci)` into a land."
-    },
-    {
-        "id": 306,
-        "difficulty": "Medium",
-        "topics": ["String", "Backtracking"],
-        "name": "Additive Number",
-        "content": "An additive number is a string whose digits can form an additive sequence.\n\nA valid additive sequence should contain at least three numbers. Except for the first two numbers, each subsequent number in the sequence must be the sum of the preceding two.\n\nGiven a string containing only digits, return `true` if it is an additive number or `false` otherwise."
-    },
-    {
-        "id": 307,
-        "difficulty": "Medium",
-        "topics": ["Array", "Design", "Binary Indexed Tree", "Segment Tree"],
-        "name": "Range Sum Query - Mutable",
-        "content": "Given an integer array `nums`, handle multiple queries of the following types:\n1. Update the value of an element in `nums`.\n2. Calculate the sum of the elements of `nums` between indices `left` and `right` inclusive where `left <= right`.\n\nImplement the NumArray class:\n- `NumArray(int[] nums)` Initializes the object with the integer array nums.\n- `void update(int index, int val)` Updates the value of `nums[index]` to be val.\n- `int sumRange(int left, int right)` Returns the sum of the elements of nums between indices `left` and `right` inclusive (i.e. `nums[left] + nums[left + 1] + ... + nums[right]`)."
-    },
-    {
-        "id": 308,
-        "difficulty": "Hard",
-        "topics": ["Array", "Design", "Binary Indexed Tree", "Segment Tree"],
-        "name": "Range Sum Query 2D - Mutable",
-        "content": "Given a 2D matrix `matrix`, handle multiple queries of the following types:\n1. Update the value of a cell in matrix.\n2. Calculate the sum of the elements of matrix inside the rectangle defined by its upper left corner `(row1, col1)` and lower right corner `(row2, col2)`.\n\nImplement the NumMatrix class:\n- `NumMatrix(int[][] matrix)` Initializes the object with the integer matrix matrix.\n- `void update(int row, int col, int val)` Updates the value of `matrix[row][col]` to be val.\n- `int sumRegion(int row1, int col1, int row2, int col2)` Returns the sum of the elements of matrix inside the rectangle defined by its upper left corner `(row1, col1)` and lower right corner `(row2, col2)`."
-    },
-    {
-        "id": 309,
-        "difficulty": "Medium",
-        "topics": ["Array", "Dynamic Programming"],
-        "name": "Best Time to Buy and Sell Stock with Cooldown",
-        "content": "You are given an array `prices` where `prices[i]` is the price of a given stock on the ith day.\n\nFind the maximum profit you can achieve. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times) with the following restrictions:\n- After you sell your stock, you cannot buy stock on the next day (i.e., cooldown one day).\n\nNote: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again)."
-    },
-    {
-        "id": 310,
-        "difficulty": "Medium",
-        "topics": ["Depth-First Search", "Breadth-First Search", "Graph", "Topological Sort"],
-        "name": "Minimum Height Trees",
-        "content": "A tree is an undirected graph in which any two vertices are connected by exactly one path. In other words, any connected graph without simple cycles is a tree.\n\nGiven a tree of `n` nodes labelled from `0` to `n - 1`, and an array of `n - 1` edges where `edges[i] = [ai, bi]` indicates that there is an undirected edge between nodes `ai` and `bi` in the tree, you can choose any node of the tree as the root. When you select a node `x` as the root, the result tree has height `h`. Among all possible rooted trees, those with minimum height (i.e. `min(h)`) are called minimum height trees (MHTs).\n\nReturn a list of all MHTs' root labels. You can return the answer in any order."
-    },
-    {
-        "id": 311,
-        "difficulty": "Medium",
-        "topics": ["Array", "Hash Table", "Matrix"],
-        "name": "Sparse Matrix Multiplication",
-        "content": "Given two sparse matrices `mat1` of size `m x k` and `mat2` of size `k x n`, return the result of `mat1 x mat2`. You may assume that multiplication is always possible."
-    },
-    {
-        "id": 312,
-        "difficulty": "Hard",
-        "topics": ["Array", "Dynamic Programming"],
-        "name": "Burst Balloons",
-        "content": "You are given `n` balloons, indexed from `0` to `n - 1`. Each balloon is painted with a number on it represented by an array `nums`. You are asked to burst all the balloons.\n\nIf you burst the ith balloon, you will get `nums[i - 1] * nums[i] * nums[i + 1]` coins. If `i - 1` or `i + 1` goes out of bounds of the array, then treat it as if there is a balloon with a 1 painted on it.\n\nReturn the maximum coins you can collect by bursting the balloons wisely."
-    },
-    {
-        "id": 313,
-        "difficulty": "Hard",
-        "topics": ["Math", "Dynamic Programming"],
-        "name": "Super Ugly Number",
-        "content": "A super ugly number is a positive integer whose prime factors are in the array `primes`.\n\nGiven an integer `n` and an array of integers `primes`, return the nth super ugly number.\n\nThe nth super ugly number is guaranteed to fit in a 32-bit signed integer."
-    },
-    {
-        "id": 314,
-        "difficulty": "Medium",
-        "topics": ["Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree"],
-        "name": "Binary Tree Vertical Order Traversal",
-        "content": "Given the `root` of a binary tree, return the vertical order traversal of its nodes' values. (i.e., from top to bottom, column by column).\n\nIf two nodes are in the same row and column, the order should be from left to right."
-    },
-    {
-        "id": 315,
-        "difficulty": "Hard",
-        "topics": ["Array", "Binary Search", "Divide and Conquer", "Binary Indexed Tree", "Segment Tree", "Merge Sort"],
-        "name": "Count of Smaller Numbers After Self",
-        "content": "Given an integer array `nums`, return an integer array `counts` where `counts[i]` is the number of smaller elements to the right of `nums[i]`."
-    },
-    {
-        "id": 316,
-        "difficulty": "Medium",
-        "topics": ["String", "Stack", "Greedy", "Monotonic Stack"],
-        "name": "Remove Duplicate Letters",
-        "content": "Given a string `s`, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results."
-    },
-    {
-        "id": 317,
-        "difficulty": "Hard",
-        "topics": ["Array", "Breadth-First Search", "Matrix"],
-        "name": "Shortest Distance from All Buildings",
-        "content": "You are given an `m x n` grid `grid` of values `0`, `1`, or `2`, where:\n- each `0` marks an empty land that you can pass by freely,\n- each `1` marks a building that you cannot pass through, and\n- each `2` marks an obstacle that you cannot pass through.\n\nYou want to build a house on an empty land that reaches all buildings in the shortest total travel distance. You can only move up, down, left, and right.\n\nReturn the shortest total travel distance for such a house. If it is not possible to build such a house according to the above rules, return -1."
-    },
-    {
-        "id": 318,
-        "difficulty": "Medium",
-        "topics": ["Array", "String", "Bit Manipulation"],
-        "name": "Maximum Product of Word Lengths",
-        "content": "Given a string array `words`, return the maximum value of `length(word[i]) * length(word[j])` where the two words do not share common letters. If no such two words exist, return 0."
-    },
-    {
-        "id": 319,
-        "difficulty": "Medium",
-        "topics": ["Math", "Dynamic Programming"],
-        "name": "Bulb Switcher",
-        "content": "There are `n` bulbs that are initially off. You first turn on all the bulbs, then you turn off every second bulb.\n\nOn the third round, you toggle every third bulb (turning on if it's off or turning off if it's on). For the ith round, you toggle every i bulb. For the nth round, you only toggle the last bulb.\n\nReturn the number of bulbs that are on after n rounds."
-    },
-    {
-        "id": 320,
-        "difficulty": "Medium",
-        "topics": ["Array", "Binary Search"],
-        "name": "Generalized Abbreviation",
-        "content": "A word's generalized abbreviation can be constructed by taking any number of non-overlapping and non-adjacent substrings and replacing them with their respective lengths.\n\nFor example, \"abcde\" can be abbreviated into:\n- \"a3e\" (\"bcd\" turned into \"3\")\n- \"1b1d1\" (\"a\" turned into \"1\", \"c\" turned into \"1\", and \"e\" turned into \"1\")\n- \"5\" (\"abcde\" turned into \"5\")\n- \"abcde\" (no substrings replaced)\n\nHowever, these abbreviations are invalid:\n- \"23\" (\"ab\" turned into \"2\" and \"cde\" turned into \"3\") is invalid as the substrings chosen are adjacent.\n- \"22de\" (\"ab\" turned into \"2\" and \"bc\" turned into \"2\") is invalid as the substring chosen overlap.\n\nGiven a string word, return a list of all possible generalized abbreviations of word. Return the answer in any order."
-    },
-    {
-        "id": 321,
-        "difficulty": "Hard",
-        "topics": ["Array", "Math", "Dynamic Programming"],
-        "name": "Create Maximum Number",
-        "content": "You are given two integer arrays `nums1` and `nums2` of lengths `m` and `n` respectively. `nums1` and `nums2` represent the digits of two numbers. You are also given an integer `k`.\n\nCreate the maximum number of length `k <= m + n` from digits of the two numbers. The relative order of the digits from the same array must be preserved."
-    },
-    {
-        "id": 322,
-        "difficulty": "Medium",
-        "topics": ["Array", "Dynamic Programming"],
-        "name": "Coin Change",
-        "content": "You are given an integer array `coins` representing coins of different denominations and an integer `amount` representing a total amount of money.\n\nReturn the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return `-1`."
-    },
-    {
-        "id": 323,
-        "difficulty": "Medium",
-        "topics": ["Depth-First Search", "Breadth-First Search", "Union Find", "Graph"],
-        "name": "Number of Connected Components in an Undirected Graph",
-        "content": "You have a graph of `n` nodes. You are given an integer `n` and an array `edges` where `edges[i] = [ai, bi]` indicates that there is an edge between `ai` and `bi` in the graph.\n\nReturn the number of connected components in the graph."
-    },
-    {
-        "id": 324,
-        "difficulty": "Medium",
-        "topics": ["Array", "Greedy", "Sorting", "Heap (Priority Queue)"],
-        "name": "Wiggle Sort II",
-        "content": "Given an integer array `nums`, reorder it such that `nums[0] < nums[1] > nums[2] < nums[3]...`.\n\nYou may assume the input array always has a valid answer."
-    },
-    {
-        "id": 325,
-        "difficulty": "Hard",
-        "topics": ["Array", "Binary Search"],
-        "name": "Maximum Size Subarray Sum Equals k",
-        "content": "Given an integer array `nums` and an integer `k`, return the maximum length of a subarray that sums to `k`. If there is not one, return `0` instead."
-    },
-    {
-        "id": 326,
-        "difficulty": "Easy",
-        "topics": ["Math"],
-        "name": "Power of Three",
-        "content": "Given an integer `n`, return `true` if it is a power of three. Otherwise, return `false`.\n\nAn integer `n` is a power of three, if there exists an integer `x` such that `n == 3^x`."
-    },
-    {
-        "id": 327,
-        "difficulty": "Hard",
-        "topics": ["Array", "Binary Search", "Divide and Conquer", "Binary Indexed Tree", "Segment Tree", "Merge Sort"],
-        "name": "Count of Range Sum",
-        "content": "Given an integer array `nums` and two integers `lower` and `upper`, return the number of range sums that lie in `[lower, upper]` inclusive.\n\nRange sum `S(i, j)` is defined as the sum of the elements in `nums` between indices `i` and `j` inclusive, where `i <= j`."
-    },
-    {
-        "id": 328,
-        "difficulty": "Medium",
-        "topics": ["Linked List"],
-        "name": "Odd Even Linked List",
-        "content": "Given the `head` of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.\n\nThe first node is considered odd, and the second node is even, and so on.\n\nNote that the relative order inside both the even and odd groups should remain as it was in the input."
-    },
-    {
-        "id": 329,
-        "difficulty": "Hard",
-        "topics": ["Array", "Dynamic Programming", "Matrix"],
-        "name": "Longest Increasing Path in a Matrix",
-        "content": "Given an `m x n` integers `matrix`, return the length of the longest increasing path in `matrix`.\n\nFrom each cell, you can either move in four directions: left, right, up, or down. You may not move diagonally or move outside the boundary (i.e., wrap-around is not allowed)."
-    },
-    {
-        "id": 330,
-        "difficulty": "Hard",
-        "topics": ["Array", "Stack", "Union Find", "Monotonic Stack"],
-        "name": "Patching Array",
-        "content": "Given a sorted integer array `nums` and an integer `n`, add/patch elements to the array such that any number in the range `[1, n]` inclusive can be formed by the sum of some elements in the array.\n\nReturn the minimum number of patches required."
-    },
-    {
-        "id": 331,
-        "difficulty": "Medium",
-        "topics": ["Tree", "Depth-First Search", "Binary Tree"],
-        "name": "Verify Preorder Serialization of a Binary Tree",
-        "content": "One way to serialize a binary tree is to use preorder traversal. When we encounter a non-null node, we record the node's value. If it is a null node, we record using a sentinel value such as '#'.\n\nFor example, the above binary tree can be serialized to the string \"9,3,4,#,#,1,#,#,2,#,6,#,#\", where '#' represents a null node.\n\nGiven a string of comma-separated values preorder, return true if it is a correct preorder traversal serialization of a binary tree."
-    },
-    {
-        "id": 332,
-        "difficulty": "Hard",
-        "topics": ["Depth-First Search", "Graph"],
-        "name": "Reconstruct Itinerary",
-        "content": "You are given a list of airline tickets where `tickets[i] = [fromi, toi]` represent the departure and arrival airports of one flight. Reconstruct the itinerary in order and return it.\n\nAll of the tickets belong to a man who departs from 'JFK', thus, the itinerary must begin with 'JFK'. If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string."
-    },
-    {
-        "id": 333,
-        "difficulty": "Medium",
-        "topics": ["Tree", "Depth-First Search", "Binary Tree"],
-        "name": "Largest BST Subtree",
-        "content": "Given the root of a binary tree, find the largest subtree, which is also a Binary Search Tree (BST), where the largest means subtree has the largest number of nodes."
-    },
-    {
-        "id": 334,
-        "difficulty": "Medium",
-        "topics": ["Array", "Dynamic Programming", "Greedy"],
-        "name": "Increasing Triplet Subsequence",
-        "content": "Given an integer array nums, return true if there exists a triple of indices (i, j, k) such that i < j < k and nums[i] < nums[j] < nums[k]. If no such indices exists, return false."
-    },
-    {
-        "id": 335,
-        "difficulty": "Hard",
-        "topics": ["Array", "Math"],
-        "name": "Self Crossing",
-        "content": "You are given an array of integers distance.\n\nYou start at point (0,0) on a plane and you move distance[0] meters to the north, then distance[1] meters to the west, distance[2] meters to the south, distance[3] meters to the east, and so on. In other words, after each move, your direction changes counter-clockwise.\n\nReturn true if your path crosses itself, and false if it does not."
-    },
-    {
-        "id": 336,
-        "difficulty": "Hard",
-        "topics": ["Array", "String", "Hash Table", "String Matching"],
-        "name": "Palindrome Pairs",
-        "content": "Given a list of unique words, return all the pairs of the distinct indices (i, j) in the given list, so that the concatenation of the two words words[i] + words[j] is a palindrome."
-    },
-    {
-        "id": 337,
-        "difficulty": "Medium",
-        "topics": ["Tree", "Depth-First Search", "Dynamic Programming", "Binary Tree"],
-        "name": "House Robber III",
-        "content": "The thief has found himself a new place for his thievery again. There is only one entrance to this area, called root.\n\nBesides the root, each house has one and only one parent house. After a tour, the smart thief realized that all houses in this place form a binary tree. It will automatically contact the police if two directly-linked houses were broken into on the same night.\n\nGiven the root of the binary tree, return the maximum amount of money the thief can rob without alerting the police."
-    },
-    {
-        "id": 338,
-        "difficulty": "Easy",
-        "topics": ["Dynamic Programming", "Bit Manipulation"],
-        "name": "Counting Bits",
-        "content": "Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i."
-    },
-    {
-        "id": 339,
-        "difficulty": "Easy",
-        "topics": ["Tree", "Depth-First Search", "Breadth-First Search"],
-        "name": "Nested List Weight Sum",
-        "content": "You are given a nested list of integers nestedList. Each element is either an integer or a list whose elements may also be integers or other lists.\n\nThe depth of an integer is the number of lists that it is inside of. For example, the nested list [1,[2,2],[[3],2],1] has each integer's value set to its depth.\n\nReturn the sum of each integer in nestedList multiplied by its depth."
-    },
-    {
-        "id": 340,
-        "difficulty": "Hard",
-        "topics": ["Hash Table", "String", "Sliding Window"],
-        "name": "Longest Substring with At Most K Distinct Characters",
-        "content": "Given a string s and an integer k, return the length of the longest substring of s that contains at most k distinct characters."
-    },
-    {
-        "id": 341,
-        "difficulty": "Medium",
-        "topics": ["Stack", "Design"],
-        "name": "Flatten Nested List Iterator",
-        "content": "You are given a nested list of integers `nestedList`. Each element is either an integer or a list whose elements may also be integers or other lists. Implement an iterator to flatten it.\n\nImplement the `NestedIterator` class:\n- `NestedIterator(List<NestedInteger> nestedList)` Initializes the iterator with the nested list `nestedList`.\n- `int next()` Returns the next integer in the nested list.\n- `boolean hasNext()` Returns `true` if there are still some integers in the nested list and `false` otherwise."
-    },
-    {
-        "id": 342,
-        "difficulty": "Easy",
-        "topics": ["Math", "Bit Manipulation", "Recursion"],
-        "name": "Power of Four",
-        "content": "Given an integer `n`, return `true` if it is a power of four. Otherwise, return `false`.\n\nAn integer `n` is a power of four, if there exists an integer `x` such that `n == 4^x`."
-    },
-    {
-        "id": 343,
-        "difficulty": "Medium",
-        "topics": ["Math", "Dynamic Programming"],
-        "name": "Integer Break",
-        "content": "Given an integer `n`, break it into the sum of `k` positive integers, where `k >= 2`, and maximize the product of those integers.\n\nReturn the maximum product you can get."
-    },
-    {
-        "id": 344,
-        "difficulty": "Easy",
-        "topics": ["Two Pointers", "String", "Recursion"],
-        "name": "Reverse String",
-        "content": "Write a function that reverses a string. The input string is given as an array of characters `s`.\n\nYou must do this by modifying the input array in-place with O(1) extra memory."
-    },
-    {
-        "id": 345,
-        "difficulty": "Easy",
-        "topics": ["Two Pointers", "String"],
-        "name": "Reverse Vowels of a String",
-        "content": "Given a string `s`, reverse only all the vowels in the string and return it.\n\nThe vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once."
-    },
-    {
-        "id": 346,
-        "difficulty": "Easy",
-        "topics": ["Array", "Design", "Queue", "Data Stream"],
-        "name": "Moving Average from Data Stream",
-        "content": "Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.\n\nImplement the `MovingAverage` class:\n- `MovingAverage(int size)` Initializes the object with the size of the window `size`.\n- `double next(int val)` Returns the moving average of the last `size` values of the stream."
-    },
-    {
-        "id": 347,
-        "difficulty": "Medium",
-        "topics": ["Array", "Hash Table", "Divide and Conquer", "Sorting", "Heap (Priority Queue)", "Bucket Sort", "Counting", "Quickselect"],
-        "name": "Top K Frequent Elements",
-        "content": "Given an integer array `nums` and an integer `k`, return the `k` most frequent elements. You may return the answer in any order."
-    },
-    {
-        "id": 348,
-        "difficulty": "Medium",
-        "topics": ["Array", "Hash Table", "Design"],
-        "name": "Design Tic-Tac-Toe",
-        "content": "Assume the following rules are for the tic-tac-toe game on an `n x n` board between two players:\n1. A move is guaranteed to be valid and is placed on an empty block.\n2. Once a winning condition is reached, no more moves are allowed.\n3. A player who succeeds in placing n of their marks in a horizontal, vertical, or diagonal row wins the game.\n\nImplement the TicTacToe class:\n- `TicTacToe(int n)` Initializes the object the size of the board `n`.\n- `int move(int row, int col, int player)` Indicates that the player with id `player` plays at the cell `(row, col)` of the board. The move is guaranteed to be a valid move."
-    },
-    {
-        "id": 349,
-        "difficulty": "Easy",
-        "topics": ["Array", "Hash Table", "Two Pointers", "Binary Search", "Sorting"],
-        "name": "Intersection of Two Arrays",
-        "content": "Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result must be unique and you may return the result in any order."
-    },
-    {
-        "id": 350,
-        "difficulty": "Easy",
-        "topics": ["Array", "Hash Table", "Two Pointers", "Binary Search", "Sorting"],
-        "name": "Intersection of Two Arrays II",
-        "content": "Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order."
-    },
-    {
-        "id": 351,
-        "difficulty": "Medium",
-        "topics": ["Array", "Hash Table"],
-        "name": "Android Unlock Patterns",
-        "content": "Android devices have a special lock screen with a 3 x 3 grid of dots. Users can set an \"unlock pattern\" by connecting dots in a specific sequence, forming a pattern of at least 4 dots.\n\nGiven two integers m and n, return the number of unique and valid unlock patterns of the Android grid lock screen that consist of at least m keys and at most n keys.\n\nTwo patterns are considered different if they have different length or contain different dots sequence."
-    },
-    {
-        "id": 352,
-        "difficulty": "Hard",
-        "topics": ["Array", "Binary Search"],
-        "name": "Data Stream as Disjoint Intervals",
-        "content": "Given a data stream input of non-negative integers a1, a2, ..., an, summarize the numbers seen so far as a list of disjoint intervals.\n\nImplement the SummaryRanges class:\n- `SummaryRanges()` Initializes the object with an empty stream.\n- `void addNum(int value)` Adds the integer value to the stream.\n- `int[][] getIntervals()` Returns a summary of the integers in the stream currently as a list of disjoint intervals [starti, endi]."
-    },
-    {
-        "id": 353,
-        "difficulty": "Medium",
-        "topics": ["Array", "Hash Table", "Design"],
-        "name": "Design Snake Game",
-        "content": "Design a Snake game that is played on a device with screen size = width x height. Play the game online if you are not familiar with the game.\n\nThe snake is initially positioned at the top left corner (0,0) with length = 1 unit.\n\nYou are given a list of food's positions in row-column order. When a snake eats the food, its length and the game's score both increase by 1.\n\nEach food appears one by one on the screen. For example, the second food will not appear until the first food was eaten by the snake.\n\nWhen a food does appear on the screen, it is guaranteed that it will not appear on a block occupied by the snake."
-    },
-    {
-        "id": 354,
-        "difficulty": "Hard",
-        "topics": ["Array", "Binary Search", "Dynamic Programming"],
-        "name": "Russian Doll Envelopes",
-        "content": "You are given a 2D array of integers envelopes where envelopes[i] = [wi, hi] represents the width and the height of an envelope.\n\nOne envelope can fit into another if and only if both the width and height of one envelope are greater than the other envelope's width and height.\n\nReturn the maximum number of envelopes you can Russian doll (i.e., put one inside the other)."
-    },
-    {
-        "id": 355,
-        "difficulty": "Medium",
-        "topics": ["Hash Table", "Heap (Priority Queue)", "Design"],
-        "name": "Design Twitter",
-        "content": "Design a simplified version of Twitter where users can post tweets, follow/unfollow another user, and is able to see the 10 most recent tweets in the user's news feed.\n\nImplement the Twitter class:\n- `Twitter()` Initializes your twitter object.\n- `void postTweet(int userId, int tweetId)` Composes a new tweet with ID tweetId by the user userId.\n- `List<Integer> getNewsFeed(int userId)` Retrieves the 10 most recent tweet IDs in the user's news feed.\n- `void follow(int followerId, int followeeId)` The user with ID followerId started following the user with ID followeeId.\n- `void unfollow(int followerId, int followeeId)` The user with ID followerId started unfollowing the user with ID followeeId."
-    },
-    {
-        "id": 356,
-        "difficulty": "Medium",
-        "topics": ["Array", "Math"],
-        "name": "Line Reflection",
-        "content": "Given n points on a 2D plane, find if there is such a line parallel to the y-axis that reflects the given points symmetrically.\n\nIn other words, answer whether or not if there exists a line that after reflecting all points over the given line, the original points' set is the same as the reflected ones.\n\nNote that there can be repeated points."
-    },
-    {
-        "id": 357,
-        "difficulty": "Medium",
-        "topics": ["Math", "Dynamic Programming", "Backtracking"],
-        "name": "Count Numbers with Unique Digits",
-        "content": "Given an integer n, return the count of all numbers with unique digits, x, where 0 <= x < 10^n."
-    },
-    {
-        "id": 358,
-        "difficulty": "Hard",
-        "topics": ["Hash Table", "String", "Sorting"],
-        "name": "Rearrange String k Distance Apart",
-        "content": "Given a string s and an integer k, rearrange s such that the same characters are at least distance k from each other. If it is not possible to rearrange the string, return an empty string \"\"."
-    },
-    {
-        "id": 359,
-        "difficulty": "Easy",
-        "topics": ["Hash Table", "Design"],
-        "name": "Logger Rate Limiter",
-        "content": "Design a logger system that receives a stream of messages along with their timestamps. Each unique message should only be printed at most every 10 seconds (i.e. a message printed at timestamp t will prevent other identical messages from being printed until timestamp t + 10).\n\nAll messages will come in chronological order. Several messages may arrive at the same timestamp.\n\nImplement the Logger class:\n- `Logger()` Initializes the logger object.\n- `boolean shouldPrintMessage(int timestamp, string message)` Returns true if the message should be printed in the given timestamp, otherwise returns false."
-    },
-    {
-        "id": 360,
-        "difficulty": "Medium",
-        "topics": ["Array", "Math", "Sorting"],
-        "name": "Sort Transformed Array",
-        "content": "Given a sorted integer array nums and three integers a, b and c, apply a quadratic function of the form f(x) = ax2 + bx + c to each element nums[i] in the array, and return the array in a sorted order."
-    },
-    {
-        "id": 361,
-        "difficulty": "Medium",
-        "topics": ["Array", "Dynamic Programming"],
-        "name": "Bomb Enemy",
-        "content": "Given an m x n matrix grid where each cell can be a wall 'W', an enemy 'E' or empty '0', return the maximum enemies you can kill using one bomb. You can only place the bomb in an empty cell.\n\nThe bomb kills all the enemies in the same row and column from the planted point until it hits the wall since it is too strong to be destroyed.\n\nNote that you can only put the bomb at an empty cell."
-    },
-    {
-        "id": 362,
-        "difficulty": "Medium",
-        "topics": ["Design"],
-        "name": "Design Hit Counter",
-        "content": "Design a hit counter which counts the number of hits received in the past 5 minutes (i.e., the past 300 seconds).\n\nImplement the HitCounter class:\n- `HitCounter()` Initializes the object of the hit counter system.\n- `void hit(int timestamp)` Records a hit that happened at timestamp (in seconds). Several hits may happen at the same timestamp.\n- `int getHits(int timestamp)` Returns the number of hits in the past 5 minutes from timestamp (i.e., the past 300 seconds)."
-    },
-    {
-        "id": 363,
-        "difficulty": "Hard",
-        "topics": ["Array", "Binary Search", "Dynamic Programming", "Sliding Window"],
-        "name": "Max Sum of Rectangle No Larger Than K",
-        "content": "Given an m x n matrix matrix and an integer k, return the max sum of a rectangle in the matrix such that its sum is no larger than k.\n\nIt is guaranteed that there will be a rectangle with a sum no larger than k."
-    },
-    {
-        "id": 364,
-        "difficulty": "Medium",
-        "topics": ["Tree", "Depth-First Search", "Breadth-First Search"],
-        "name": "Nested List Weight Sum II",
-        "content": "You are given a nested list of integers nestedList. Each element is either an integer or a list whose elements may also be integers or other lists.\n\nThe depth of an integer is the number of lists that it is inside of. For example, the nested list [1,[2,2],[[3],2],1] has each integer's value set to its depth. The weight of an integer is maxDepth - (the depth of the integer) + 1, where maxDepth is the maximum depth of any integer.\n\nReturn the sum of each integer in nestedList multiplied by its weight."
-    },
-    {
-        "id": 365,
-        "difficulty": "Medium",
-        "topics": ["Math", "Dynamic Programming"],
-        "name": "Water and Jug Problem",
-        "content": "You are given two jugs with capacities jug1Capacity and jug2Capacity liters. There is an infinite amount of water supply available. Determine whether it is possible to measure exactly targetCapacity liters using these two jugs.\n\nIf targetCapacity liters of water are measurable, you must have targetCapacity liters of water contained within one or both buckets by the end."
-    },
-    {
-        "id": 366,
-        "difficulty": "Medium",
-        "topics": ["Tree", "Depth-First Search", "Binary Tree"],
-        "name": "Find Leaves of Binary Tree",
-        "content": "Given the root of a binary tree, collect a tree's nodes as if you were doing this:\n- Collect all the leaf nodes.\n- Remove all the leaf nodes.\n- Repeat until the tree is empty."
-    },
-    {
-        "id": 367,
-        "difficulty": "Easy",
-        "topics": ["Math", "Binary Search"],
-        "name": "Valid Perfect Square",
-        "content": "Given a positive integer num, write a function which returns True if num is a perfect square else False.\n\nFollow up: Do not use any built-in library function such as sqrt."
-    },
-    {
-        "id": 368,
-        "difficulty": "Medium",
-        "topics": ["Array", "Math", "Dynamic Programming"],
-        "name": "Largest Divisible Subset",
-        "content": "Given a set of distinct positive integers nums, return the largest subset answer such that every pair (answer[i], answer[j]) of elements in this subset satisfies:\n- answer[i] % answer[j] == 0, or\n- answer[j] % answer[i] == 0\n\nIf there are multiple solutions, return any of them."
-    },
-    {
-        "id": 369,
-        "difficulty": "Medium",
-        "topics": ["Tree", "Depth-First Search", "Binary Tree"],
-        "name": "Plus One Linked List",
-        "content": "Given a non-negative integer represented as a linked list of digits, plus one to the number.\n\nThe digits are stored such that the most significant digit is at the head of the list."
-    },
-    {
-        "id": 370,
-        "difficulty": "Medium",
-        "topics": ["Array", "Math", "Dynamic Programming"],
-        "name": "Range Addition",
-        "content": "You are given an integer length and an array updates where updates[i] = [startIdxi, endIdxi, inci].\n\nYou have an array arr of length length with all zeros, and you have some operation to apply on arr. In the ith operation, you should increment all the elements arr[startIdxi], arr[startIdxi + 1], ..., arr[endIdxi] by inci.\n\nReturn arr after applying all the updates."
-    },
-    {
-        "id": 371,
-        "difficulty": "Medium",
-        "topics": ["Math", "Bit Manipulation"],
-        "name": "Sum of Two Integers",
-        "content": "Given two integers a and b, return the sum of the two integers without using the operators + and -."
-    },
-    {
-        "id": 372,
-        "difficulty": "Medium",
-        "topics": ["Math"],
-        "name": "Super Pow",
-        "content": "Your task is to calculate ab mod 1337 where a is a positive integer and b is an extremely large positive integer given in the form of an array."
-    },
-    {
-        "id": 373,
-        "difficulty": "Medium",
-        "topics": ["Array", "Heap (Priority Queue)"],
-        "name": "Find K Pairs with Smallest Sums",
-        "content": "You are given two integer arrays nums1 and nums2 sorted in ascending order and an integer k.\n\nDefine a pair (u, v) which consists of one element from the first array and one element from the second array.\n\nReturn the k pairs (u1, v1), (u2, v2), ..., (uk, vk) with the smallest sums."
-    },
-    {
-        "id": 374,
-        "difficulty": "Easy",
-        "topics": ["Binary Search", "Interactive"],
-        "name": "Guess Number Higher or Lower",
-        "content": "We are playing the Guess Game. The game is as follows:\n\nI pick a number from 1 to n. You have to guess which number I picked.\n\nEvery time you guess wrong, I will tell you whether the number I picked is higher or lower than your guess.\n\nYou call a pre-defined API int guess(int num), which returns:\n- -1 if num is higher than the picked number\n- 1 if num is lower than the picked number\n- 0 if num is equal to the picked number\n\nReturn the number that I picked."
-    },
-    {
-        "id": 375,
-        "difficulty": "Hard",
-        "topics": ["Math", "Binary Search", "Dynamic Programming", "Game Theory"],
-        "name": "Guess Number Higher or Lower II",
-        "content": "We are playing the Guessing Game. The game will work as follows:\n\n1. I pick a number between 1 and n.\n2. You guess a number.\n3. If you guess the right number, you win the game.\n4. If you guess the wrong number, then I will tell you whether the number I picked is higher or lower, and you will continue guessing.\n5. Every time you guess a wrong number x, you will pay x dollars. If you run out of money, you lose the game.\n\nGiven a particular n, return the minimum amount of money you need to guarantee a win regardless of what number I pick."
-    },
-    {
-        "id": 376,
-        "difficulty": "Medium",
-        "topics": ["Array", "Dynamic Programming", "Greedy"],
-        "name": "Wiggle Subsequence",
-        "content": "A wiggle sequence is a sequence where the differences between successive numbers strictly alternate between positive and negative. The first difference (if one exists) may be either positive or negative. A sequence with one element and a sequence with two non-equal elements are trivially wiggle sequences.\n\nGiven an integer array nums, return the length of the longest wiggle subsequence of nums."
-    },
-    {
-        "id": 377,
-        "difficulty": "Medium",
-        "topics": ["Array", "Dynamic Programming"],
-        "name": "Combination Sum IV",
-        "content": "Given an array of distinct integers nums and a target integer target, return the number of possible combinations that add up to target.\n\nThe test cases are generated so that the answer can fit in a 32-bit integer."
-    },
-    {
-        "id": 378,
-        "difficulty": "Medium",
-        "topics": ["Array", "Binary Search", "Matrix", "Heap (Priority Queue)"],
-        "name": "Kth Smallest Element in a Sorted Matrix",
-        "content": "Given an n x n matrix where each of the rows and columns is sorted in ascending order, return the kth smallest element in the matrix.\n\nNote that it is the kth smallest element in the sorted order, not the kth distinct element."
-    },
-    {
-        "id": 379,
-        "difficulty": "Medium",
-        "topics": ["Hash Table", "Design"],
-        "name": "Design Phone Directory",
-        "content": "Design a phone directory that initially has maxNumbers empty slots that can store numbers. The directory should store numbers, check if a certain slot is empty or not, and release a previously assigned number.\n\nImplement the PhoneDirectory class:\n- PhoneDirectory(int maxNumbers) Initializes the phone directory with the number of available slots maxNumbers.\n- int get() Provides a number that is not assigned to anyone. Returns -1 if no number is available.\n- bool check(int number) Returns true if the slot number is available and false otherwise.\n- void release(int number) Recycles or releases the slot number."
-    },
-    {
-        "id": 380,
-        "difficulty": "Medium",
-        "topics": ["Array", "Hash Table", "Design", "Randomized"],
-        "name": "Insert Delete GetRandom O(1)",
-        "content": "Implement the RandomizedSet class:\n- RandomizedSet() Initializes the RandomizedSet object.\n- bool insert(int val) Inserts an item val into the set if not present. Returns true if the item was not present, false otherwise.\n- bool remove(int val) Removes an item val from the set if present. Returns true if the item was present, false otherwise.\n- int getRandom() Returns a random element from the current set of elements (it's guaranteed that at least one element exists when this method is called). Each element must have the same probability of being returned."
-    },
-    {
-        "id": 381,
-        "difficulty": "Hard",
-        "topics": ["Array", "Hash Table", "Design", "Randomized"],
-        "name": "Insert Delete GetRandom O(1) - Duplicates allowed",
-        "content": "RandomizedCollection is a data structure that contains a collection of numbers, possibly duplicates (i.e., a multiset). It should support inserting and removing specific elements and also removing a random element.\n\nImplement the RandomizedCollection class:\n- RandomizedCollection() Initializes the empty RandomizedCollection object.\n- bool insert(int val) Inserts an item val into the multiset, even if the item is already present. Returns true if the item is not present, false otherwise.\n- bool remove(int val) Removes an item val from the multiset if present. Returns true if the item is present, false otherwise. Note that if val has multiple occurrences in the multiset, we only remove one of them.\n- int getRandom() Returns a random element from the current multiset of elements. The probability of each element being returned is linearly related to the number of same values the multiset contains."
-    },
-    {
-        "id": 382,
-        "difficulty": "Medium",
-        "topics": ["Linked List", "Math", "Reservoir Sampling", "Randomized"],
-        "name": "Linked List Random Node",
-        "content": "Given a singly linked list, return a random node's value from the linked list. Each node must have the same probability of being chosen.\n\nImplement the Solution class:\n- Solution(ListNode head) Initializes the object with the head of the singly-linked list head.\n- int getRandom() Returns a random node's value from the linked list."
-    },
-    {
-        "id": 383,
-        "difficulty": "Easy",
-        "topics": ["Hash Table", "String", "Counting"],
-        "name": "Ransom Note",
-        "content": "Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise.\n\nEach letter in magazine can only be used once in ransomNote."
-    },
-    {
-        "id": 384,
-        "difficulty": "Medium",
-        "topics": ["Array", "Math", "Randomized"],
-        "name": "Shuffle an Array",
-        "content": "Given an integer array nums, design an algorithm to randomly shuffle the array. All permutations of the array should be equally likely as a result of the shuffling.\n\nImplement the Solution class:\n- Solution(int[] nums) Initializes the object with the integer array nums.\n- int[] reset() Resets the array to its original configuration and returns it.\n- int[] shuffle() Returns a random shuffling of the array."
-    },
-    {
-        "id": 385,
-        "difficulty": "Medium",
-        "topics": ["String", "Stack", "Recursion"],
-        "name": "Mini Parser",
-        "content": "Given a string s represents the serialization of a nested list, implement a parser to deserialize it and return the deserialized NestedInteger.\n\nEach element is either an integer or a list whose elements may also be integers or other lists."
-    },
-    {
-        "id": 386,
-        "difficulty": "Medium",
-        "topics": ["Depth-First Search", "Tree"],
-        "name": "Lexicographical Numbers",
-        "content": "Given an integer n, return all the numbers in the range [1, n] sorted in lexicographical order."
-    },
-    {
-        "id": 387,
-        "difficulty": "Easy",
-        "topics": ["Hash Table", "String", "Queue", "Counting"],
-        "name": "First Unique Character in a String",
-        "content": "Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1."
-    },
-    {
-        "id": 388,
-        "difficulty": "Medium",
-        "topics": ["String", "Depth-First Search"],
-        "name": "Longest Absolute File Path",
-        "content": "Suppose we have a file system that stores both files and directories. Given a string input representing the file system in a specific format, return the length of the longest absolute path to a file in the abstracted file system. If there is no file in the system, return 0.\n\nNote that the testcases are generated such that the file system is valid and no file or directory name contains '\\t', '\\n', or '/'"
-    },
-    {
-        "id": 389,
-        "difficulty": "Easy",
-        "topics": ["Hash Table", "String", "Bit Manipulation"],
-        "name": "Find the Difference",
-        "content": "You are given two strings s and t.\n\nString t is generated by random shuffling string s and then add one more letter at a random position.\n\nReturn the letter that was added to t."
-    },
-    {
-        "id": 390,
-        "difficulty": "Medium",
-        "topics": ["Math", "Dynamic Programming"],
-        "name": "Elimination Game",
-        "content": "You have a list arr of all integers in the range [1, n] sorted in a strictly increasing order. Apply the following algorithm on arr:\n- Starting from left to right, remove the first number and every other number afterward until you reach the end of the list.\n- Repeat the previous step again, but this time from right to left, remove the rightmost number and every other number from the remaining numbers.\n- Keep repeating the steps again, alternating left to right and right to left, until a single number remains.\n\nGiven the integer n, return the last number that remains in arr."
-    },
-    {
-        "id": 391,
-        "difficulty": "Hard",
-        "topics": ["Array"],
-        "name": "Perfect Rectangle",
-        "content": "Given an array rectangles where rectangles[i] = [xi, yi, ai, bi] represents an axis-aligned rectangle. The bottom-left point of the rectangle is (xi, yi) and the top-right point of it is (ai, bi).\n\nReturn true if all the rectangles together form an exact cover of a rectangular region."
-    },
-    {
-        "id": 392,
-        "difficulty": "Easy",
-        "topics": ["Two Pointers", "String", "Dynamic Programming"],
-        "name": "Is Subsequence",
-        "content": "Given two strings s and t, return true if s is a subsequence of t, or false otherwise.\n\nA subsequence of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., \"ace\" is a subsequence of \"abcde\" while \"aec\" is not)."
-    },
-    {
-        "id": 393,
-        "difficulty": "Medium",
-        "topics": ["Bit Manipulation"],
-        "name": "UTF-8 Validation",
-        "content": "Given an integer array data representing the data, return whether it is a valid UTF-8 encoding (i.e. it translates to a sequence of valid UTF-8 encoded characters).\n\nA character in UTF8 can be from 1 to 4 bytes long, subjected to the following rules:\n1. For a 1-byte character, the first bit is a 0, followed by its Unicode code.\n2. For an n-bytes character, the first n bits are all one's, the n + 1 bit is 0, followed by n - 1 bytes with the most significant 2 bits being 10."
-    },
-    {
-        "id": 394,
-        "difficulty": "Medium",
-        "topics": ["String", "Stack", "Recursion"],
-        "name": "Decode String",
-        "content": "Given an encoded string, return its decoded string.\n\nThe encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. Note that k is guaranteed to be a positive integer.\n\nYou may assume that the input string is always valid; there are no extra white spaces, square brackets are well-formed, etc. Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, k. For example, there will not be input like 3a or 2[4]."
-    },
-    {
-        "id": 395,
-        "difficulty": "Medium",
-        "topics": ["Hash Table", "String", "Divide and Conquer", "Sliding Window"],
-        "name": "Longest Substring with At Least K Repeating Characters",
-        "content": "Given a string s and an integer k, return the length of the longest substring of s such that the frequency of each character in this substring is greater than or equal to k."
-    },
-    {
-        "id": 396,
-        "difficulty": "Medium",
-        "topics": ["Array", "Dynamic Programming"],
-        "name": "Rotate Function",
-        "content": "You are given an integer array nums of length n.\n\nAssume arrk to be an array obtained by rotating nums by k positions clock-wise. We define the rotation function F on nums as follow:\n- F(k) = 0 * arrk[0] + 1 * arrk[1] + ... + (n - 1) * arrk[n - 1].\n\nReturn the maximum value of F(0), F(1), ..., F(n-1)."
-    },
-    {
-        "id": 397,
-        "difficulty": "Medium",
-        "topics": ["Math", "Dynamic Programming"],
-        "name": "Integer Replacement",
-        "content": "Given a positive integer n, you can apply one of the following operations:\n1. If n is even, replace n with n / 2.\n2. If n is odd, replace n with either n + 1 or n - 1.\n\nReturn the minimum number of operations needed for n to become 1."
-    },
-    {
-        "id": 398,
-        "difficulty": "Medium",
-        "topics": ["Array", "Math", "Reservoir Sampling", "Randomized"],
-        "name": "Random Pick Index",
-        "content": "Given an integer array nums with possible duplicates, randomly output the index of a given target number. You can assume that the given target number must exist in the array.\n\nImplement the Solution class:\n- Solution(int[] nums) Initializes the object with the array nums.\n- int pick(int target) Picks a random index i such that nums[i] == target. If there are multiple valid i's, then each index should have an equal probability of being returned."
-    },
-    {
-        "id": 399,
-        "difficulty": "Hard",
-        "topics": ["Array", "Union Find", "Graph"],
-        "name": "Evaluate Division",
-        "content": "You are given an array of variable pairs equations and an array of real numbers values, where equations[i] = [Ai, Bi] and values[i] represent the equation Ai / Bi = values[i]. Each Ai or Bi is a string that represents a single variable.\n\nYou are also given some queries, where queries[j] = [Cj, Dj] represents the jth query where you must find the answer for Cj / Dj = ?.\n\nReturn the answers to all queries. If a single answer cannot be determined, return -1.0."
-    },
-    {
-        "id": 400,
-        "difficulty": "Medium",
-        "topics": ["Array", "Math"],
-        "name": "Nth Digit",
-        "content": "Given an integer n, return the nth digit of the infinite integer sequence [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...]."
-    }
+  {
+    "id": 301,
+    "difficulty": "Hard",
+    "topics": [
+      "String",
+      "Backtracking"
+    ],
+    "name": "Remove Invalid Parentheses",
+    "content": "Given a string `s` that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.\n\nReturn all the possible results. You may return the answer in any order."
+  },
+  {
+    "id": 302,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Matrix"
+    ],
+    "name": "Smallest Rectangle Enclosing Black Pixels",
+    "content": "You are given an `m x n` binary matrix `image` where `0` represents a white pixel and `1` represents a black pixel.\n\nThe black pixels are connected (i.e., there is only one black region). Pixels are connected horizontally and vertically.\n\nGiven two integers `x` and `y` that represents the location of one of the black pixels, return the area of the smallest (axis-aligned) rectangle that encloses all black pixels."
+  },
+  {
+    "id": 303,
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Design",
+      "Prefix Sum"
+    ],
+    "name": "Range Sum Query - Immutable",
+    "content": "Given an integer array `nums`, handle multiple queries of the following type:\n\nCalculate the sum of the elements of `nums` between indices `left` and `right` inclusive where `left <= right`.\n\nImplement the `NumArray` class:\n- `NumArray(int[] nums)` Initializes the object with the integer array `nums`.\n- `int sumRange(int left, int right)` Returns the sum of the elements of `nums` between indices `left` and `right` inclusive (i.e. `nums[left] + nums[left + 1] + ... + nums[right]`)."
+  },
+  {
+    "id": 304,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Design",
+      "Matrix",
+      "Prefix Sum"
+    ],
+    "name": "Range Sum Query 2D - Immutable",
+    "content": "Given a 2D matrix `matrix`, handle multiple queries of the following type:\n\nCalculate the sum of the elements of `matrix` inside the rectangle defined by its upper left corner `(row1, col1)` and lower right corner `(row2, col2)`.\n\nImplement the `NumMatrix` class:\n- `NumMatrix(int[][] matrix)` Initializes the object with the integer matrix `matrix`.\n- `int sumRegion(int row1, int col1, int row2, int col2)` Returns the sum of the elements of `matrix` inside the rectangle defined by its upper left corner `(row1, col1)` and lower right corner `(row2, col2)`."
+  },
+  {
+    "id": 305,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Union Find"
+    ],
+    "name": "Number of Islands II",
+    "content": "You are given an empty 2D binary grid `grid` of size `m x n`. The grid represents a map where `0`'s represent water and `1`'s represent land. Initially, all the cells of grid are water cells (i.e., all the cells are `0`).\n\nWe may perform an add land operation which turns the water at position into a land. You are given an array `positions` where `positions[i] = [ri, ci]` is the position `(ri, ci)` at which we should operate the ith operation.\n\nReturn an array of integers `answer` where `answer[i]` is the number of islands after turning the cell `(ri, ci)` into a land."
+  },
+  {
+    "id": 306,
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Backtracking"
+    ],
+    "name": "Additive Number",
+    "content": "An additive number is a string whose digits can form an additive sequence.\n\nA valid additive sequence should contain at least three numbers. Except for the first two numbers, each subsequent number in the sequence must be the sum of the preceding two.\n\nGiven a string containing only digits, return `true` if it is an additive number or `false` otherwise."
+  },
+  {
+    "id": 307,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Design",
+      "Binary Indexed Tree",
+      "Segment Tree"
+    ],
+    "name": "Range Sum Query - Mutable",
+    "content": "Given an integer array `nums`, handle multiple queries of the following types:\n1. Update the value of an element in `nums`.\n2. Calculate the sum of the elements of `nums` between indices `left` and `right` inclusive where `left <= right`.\n\nImplement the `NumArray` class:\n- `NumArray(int[] nums)` Initializes the object with the integer array `nums`.\n- `void update(int index, int val)` Updates the value of `nums[index]` to be `val`.\n- `int sumRange(int left, int right)` Returns the sum of the elements of `nums` between indices `left` and `right` inclusive (i.e. `nums[left] + nums[left + 1] + ... + nums[right]`)."
+  },
+  {
+    "id": 308,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Design",
+      "Binary Indexed Tree",
+      "Segment Tree"
+    ],
+    "name": "Range Sum Query 2D - Mutable",
+    "content": "Given a 2D matrix `matrix`, handle multiple queries of the following types:\n1. Update the value of a cell in `matrix`.\n2. Calculate the sum of the elements of `matrix` inside the rectangle defined by its upper left corner `(row1, col1)` and lower right corner `(row2, col2)`.\n\nImplement the `NumMatrix` class:\n- `NumMatrix(int[][] matrix)` Initializes the object with the integer matrix `matrix`.\n- `void update(int row, int col, int val)` Updates the value of `matrix[row][col]` to be `val`.\n- `int sumRegion(int row1, int col1, int row2, int col2)` Returns the sum of the elements of `matrix` inside the rectangle defined by its upper left corner `(row1, col1)` and lower right corner `(row2, col2)`."
+  },
+  {
+    "id": 309,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "name": "Best Time to Buy and Sell Stock with Cooldown",
+    "content": "You are given an array `prices` where `prices[i]` is the price of a given stock on the ith day.\n\nFind the maximum profit you can achieve. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times) with the following restrictions:\n- After you sell your stock, you cannot buy stock on the next day (i.e., cooldown one day).\n\nNote: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again)."
+  },
+  {
+    "id": 310,
+    "difficulty": "Medium",
+    "topics": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Graph",
+      "Topological Sort"
+    ],
+    "name": "Minimum Height Trees",
+    "content": "A tree is an undirected graph in which any two vertices are connected by exactly one path. In other words, any connected graph without simple cycles is a tree.\n\nGiven a tree of `n` nodes labelled from `0` to `n - 1`, and an array of `n - 1` edges where `edges[i] = [a_i, b_i]` indicates that there is an undirected edge between nodes `a_i` and `b_i` in the tree, you can choose any node of the tree as the root. When you select a node `x` as the root, the result tree has height `h`. Among all possible rooted trees, those with minimum height (i.e. `min(h)`) are called minimum height trees (MHTs).\n\nReturn a list of all MHTs' root labels. You can return the answer in any order."
+  },
+  {
+    "id": 311,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Matrix"
+    ],
+    "name": "Sparse Matrix Multiplication",
+    "content": "Given two sparse matrices `mat1` of size `m x k` and `mat2` of size `k x n`, return the result of `mat1 x mat2`. You may assume that multiplication is always possible."
+  },
+  {
+    "id": 312,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "name": "Burst Balloons",
+    "content": "You are given `n` balloons, indexed from `0` to `n - 1`. Each balloon is painted with a number on it represented by an array `nums`. You are asked to burst all the balloons.\n\nIf you burst the `i`th balloon, you will get `nums[i - 1] * nums[i] * nums[i + 1]` coins. If `i - 1` or `i + 1` goes out of bounds of the array, then treat it as if there is a balloon with a `1` painted on it.\n\nReturn the maximum coins you can collect by bursting the balloons wisely."
+  },
+  {
+    "id": 313,
+    "difficulty": "Hard",
+    "topics": [
+      "Math",
+      "Dynamic Programming"
+    ],
+    "name": "Super Ugly Number",
+    "content": "A super ugly number is a positive integer whose prime factors are in the array `primes`.\n\nGiven an integer `n` and an array of integers `primes`, return the nth super ugly number.\n\nThe nth super ugly number is guaranteed to fit in a 32-bit signed integer."
+  },
+  {
+    "id": 314,
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "name": "Binary Tree Vertical Order Traversal",
+    "content": "Given the `root` of a binary tree, return the vertical order traversal of its nodes' values. (i.e., from top to bottom, column by column).\n\nIf two nodes are in the same row and column, the order should be from left to right."
+  },
+  {
+    "id": 315,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Divide and Conquer",
+      "Binary Indexed Tree",
+      "Segment Tree",
+      "Merge Sort"
+    ],
+    "name": "Count of Smaller Numbers After Self",
+    "content": "Given an integer array `nums`, return an integer array `counts` where `counts[i]` is the number of smaller elements to the right of `nums[i]`."
+  },
+  {
+    "id": 316,
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Stack",
+      "Greedy",
+      "Monotonic Stack"
+    ],
+    "name": "Remove Duplicate Letters",
+    "content": "Given a string `s`, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results."
+  },
+  {
+    "id": 317,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Breadth-First Search",
+      "Matrix"
+    ],
+    "name": "Shortest Distance from All Buildings",
+    "content": "You are given an `m x n` grid `grid` of values `0`, `1`, or `2`, where:\n- each `0` marks an empty land that you can pass by freely,\n- each `1` marks a building that you cannot pass through, and\n- each `2` marks an obstacle that you cannot pass through.\n\nYou want to build a house on an empty land that reaches all buildings in the shortest total travel distance. You can only move up, down, left, and right.\n\nReturn the shortest total travel distance for such a house. If it is not possible to build such a house according to the above rules, return `-1`."
+  },
+  {
+    "id": 318,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "String",
+      "Bit Manipulation"
+    ],
+    "name": "Maximum Product of Word Lengths",
+    "content": "Given a string array `words`, return the maximum value of `length(word[i]) * length(word[j])` where the two words do not share common letters. If no such two words exist, return `0`."
+  },
+  {
+    "id": 319,
+    "difficulty": "Medium",
+    "topics": [
+      "Math",
+      "Dynamic Programming"
+    ],
+    "name": "Bulb Switcher",
+    "content": "There are `n` bulbs that are initially off. You first turn on all the bulbs, then you turn off every second bulb.\n\nOn the third round, you toggle every third bulb (turning on if it's off or turning off if it's on). For the `i`th round, you toggle every `i` bulb. For the `n`th round, you only toggle the last bulb.\n\nReturn the number of bulbs that are on after `n` rounds."
+  },
+  {
+    "id": 320,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "name": "Generalized Abbreviation",
+    "content": "A word's generalized abbreviation can be constructed by taking any number of non-overlapping and non-adjacent substrings and replacing them with their respective lengths.\n\nFor example, \"abcde\" can be abbreviated into:\n- \"a3e\" (\"bcd\" turned into \"3\")\n- \"1b1d1\" (\"a\" turned into \"1\", \"c\" turned into \"1\", and \"e\" turned into \"1\")\n- \"5\" (\"abcde\" turned into \"5\")\n- \"abcde\" (no substrings replaced)\n\nHowever, these abbreviations are invalid:\n- \"23\" (\"ab\" turned into \"2\" and \"cde\" turned into \"3\") is invalid as the substrings chosen are adjacent.\n- \"22de\" (\"ab\" turned into \"2\" and \"bc\" turned into \"2\") is invalid as the substrings chosen overlap.\n\nGiven a string `word`, return a list of all possible generalized abbreviations of `word`. Return the answer in any order."
+  },
+  {
+    "id": 321,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Math",
+      "Dynamic Programming"
+    ],
+    "name": "Create Maximum Number",
+    "content": "You are given two integer arrays `nums1` and `nums2` of lengths `m` and `n` respectively. `nums1` and `nums2` represent the digits of two numbers. You are also given an integer `k`.\n\nCreate the maximum number of length `k <= m + n` from digits of the two numbers. The relative order of the digits from the same array must be preserved."
+  },
+  {
+    "id": 322,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "name": "Coin Change",
+    "content": "You are given an integer array `coins` representing coins of different denominations and an integer `amount` representing a total amount of money.\n\nReturn the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return `-1`."
+  },
+  {
+    "id": 323,
+    "difficulty": "Medium",
+    "topics": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union Find",
+      "Graph"
+    ],
+    "name": "Number of Connected Components in an Undirected Graph",
+    "content": "You have a graph of `n` nodes. You are given an integer `n` and an array `edges` where `edges[i] = [ai, bi]` indicates that there is an edge between `ai` and `bi` in the graph.\n\nReturn the number of connected components in the graph."
+  },
+  {
+    "id": 324,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Greedy",
+      "Sorting",
+      "Heap (Priority Queue)"
+    ],
+    "name": "Wiggle Sort II",
+    "content": "Given an integer array `nums`, reorder it such that `nums[0] < nums[1] > nums[2] < nums[3]...`.\n\nYou may assume the input array always has a valid answer."
+  },
+  {
+    "id": 325,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "name": "Maximum Size Subarray Sum Equals k",
+    "content": "Given an integer array `nums` and an integer `k`, return the maximum length of a subarray that sums to `k`. If there is not one, return `0` instead."
+  },
+  {
+    "id": 326,
+    "difficulty": "Easy",
+    "topics": [
+      "Math"
+    ],
+    "name": "Power of Three",
+    "content": "Given an integer `n`, return `true` if it is a power of three. Otherwise, return `false`.\n\nAn integer `n` is a power of three, if there exists an integer `x` such that `n == 3^x`."
+  },
+  {
+    "id": 327,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Divide and Conquer",
+      "Binary Indexed Tree",
+      "Segment Tree",
+      "Merge Sort"
+    ],
+    "name": "Count of Range Sum",
+    "content": "Given an integer array `nums` and two integers `lower` and `upper`, return the number of range sums that lie in `[lower, upper]` inclusive.\n\nRange sum `S(i, j)` is defined as the sum of the elements in `nums` between indices `i` and `j` inclusive, where `i <= j`."
+  },
+  {
+    "id": 328,
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List"
+    ],
+    "name": "Odd Even Linked List",
+    "content": "Given the `head` of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.\n\nThe first node is considered odd, and the second node is even, and so on.\n\nNote that the relative order inside both the even and odd groups should remain as it was in the input."
+  },
+  {
+    "id": 329,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Dynamic Programming",
+      "Matrix"
+    ],
+    "name": "Longest Increasing Path in a Matrix",
+    "content": "Given an `m x n` integers `matrix`, return the length of the longest increasing path in `matrix`.\n\nFrom each cell, you can either move in four directions: left, right, up, or down. You may not move diagonally or move outside the boundary (i.e., wrap-around is not allowed)."
+  },
+  {
+    "id": 330,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Stack",
+      "Union Find",
+      "Monotonic Stack"
+    ],
+    "name": "Patching Array",
+    "content": "Given a sorted integer array `nums` and an integer `n`, add/patch elements to the array such that any number in the range `[1, n]` inclusive can be formed by the sum of some elements in the array.\n\nReturn the minimum number of patches required."
+  },
+  {
+    "id": 331,
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "name": "Verify Preorder Serialization of a Binary Tree",
+    "content": "One way to serialize a binary tree is to use preorder traversal. When we encounter a non-null node, we record the node's value. If it is a null node, we record using a sentinel value such as `#`.\n\nFor example, the above binary tree can be serialized to the string `\"9,3,4,#,#,1,#,#,2,#,6,#,#\"`, where `#` represents a null node.\n\nGiven a string of comma-separated values `preorder`, return true if it is a correct preorder traversal serialization of a binary tree."
+  },
+  {
+    "id": 332,
+    "difficulty": "Hard",
+    "topics": [
+      "Depth-First Search",
+      "Graph"
+    ],
+    "name": "Reconstruct Itinerary",
+    "content": "You are given a list of airline tickets where `tickets[i] = [fromi, toi]` represent the departure and arrival airports of one flight. Reconstruct the itinerary in order and return it.\n\nAll of the tickets belong to a man who departs from `JFK`, thus, the itinerary must begin with `JFK`. If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string."
+  },
+  {
+    "id": 333,
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "name": "Largest BST Subtree",
+    "content": "Given the root of a binary tree, find the largest subtree, which is also a Binary Search Tree (BST), where the largest means the subtree has the largest number of nodes."
+  },
+  {
+    "id": 334,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "name": "Increasing Triplet Subsequence",
+    "content": "Given an integer array `nums`, return true if there exists a triple of indices `(i, j, k)` such that `i < j < k` and `nums[i] < nums[j] < nums[k]`. If no such indices exist, return false."
+  },
+  {
+    "id": 335,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Math"
+    ],
+    "name": "Self Crossing",
+    "content": "You are given an array of integers `distance`.\n\nYou start at point (0,0) on a plane and you move `distance[0]` meters to the north, then `distance[1]` meters to the west, `distance[2]` meters to the south, `distance[3]` meters to the east, and so on. In other words, after each move, your direction changes counter-clockwise.\n\nReturn `true` if your path crosses itself, and `false` if it does not."
+  },
+  {
+    "id": 336,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "String",
+      "Hash Table",
+      "String Matching"
+    ],
+    "name": "Palindrome Pairs",
+    "content": "Given a list of unique words, return all the pairs of the distinct indices `(i, j)` in the given list, so that the concatenation of the two words `words[i] + words[j]` is a palindrome."
+  },
+  {
+    "id": 337,
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Dynamic Programming",
+      "Binary Tree"
+    ],
+    "name": "House Robber III",
+    "content": "The thief has found himself a new place for his thievery again. There is only one entrance to this area, called `root`.\n\nBesides the `root`, each house has one and only one parent house. After a tour, the smart thief realized that all houses in this place form a binary tree. It will automatically contact the police if two directly-linked houses were broken into on the same night.\n\nGiven the `root` of the binary tree, return the maximum amount of money the thief can rob without alerting the police."
+  },
+  {
+    "id": 338,
+    "difficulty": "Easy",
+    "topics": [
+      "Dynamic Programming",
+      "Bit Manipulation"
+    ],
+    "name": "Counting Bits",
+    "content": "Given an integer `n`, return an array `ans` of length `n + 1` such that for each `i` (0 <= `i` <= `n`), `ans[i]` is the number of 1's in the binary representation of `i`."
+  },
+  {
+    "id": 339,
+    "difficulty": "Easy",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search"
+    ],
+    "name": "Nested List Weight Sum",
+    "content": "You are given a nested list of integers `nestedList`. Each element is either an integer or a list whose elements may also be integers or other lists.\n\nThe depth of an integer is the number of lists that it is inside of. For example, the nested list `[1,[2,2],[[3],2],1]` has each integer's value set to its depth.\n\nReturn the sum of each integer in `nestedList` multiplied by its depth."
+  },
+  {
+    "id": 340,
+    "difficulty": "Hard",
+    "topics": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ],
+    "name": "Longest Substring with At Most K Distinct Characters",
+    "content": "Given a string `s` and an integer `k`, return the length of the longest substring of `s` that contains at most `k` distinct characters."
+  },
+  {
+    "id": 341,
+    "difficulty": "Medium",
+    "topics": [
+      "Stack",
+      "Design"
+    ],
+    "name": "Flatten Nested List Iterator",
+    "content": "You are given a nested list of integers `nestedList`. Each element is either an integer or a list whose elements may also be integers or other lists. Implement an iterator to flatten it.\n\nImplement the `NestedIterator` class:\n- `NestedIterator(List<NestedInteger> nestedList)` Initializes the iterator with the nested list `nestedList`.\n- `int next()` Returns the next integer in the nested list.\n- `boolean hasNext()` Returns `true` if there are still some integers in the nested list and `false` otherwise."
+  },
+  {
+    "id": 342,
+    "difficulty": "Easy",
+    "topics": [
+      "Math",
+      "Bit Manipulation",
+      "Recursion"
+    ],
+    "name": "Power of Four",
+    "content": "Given an integer `n`, return `true` if it is a power of four. Otherwise, return `false`.\n\nAn integer `n` is a power of four, if there exists an integer `x` such that `n == 4^x`."
+  },
+  {
+    "id": 343,
+    "difficulty": "Medium",
+    "topics": [
+      "Math",
+      "Dynamic Programming"
+    ],
+    "name": "Integer Break",
+    "content": "Given an integer `n`, break it into the sum of `k` positive integers, where `k >= 2`, and maximize the product of those integers.\n\nReturn the maximum product you can get."
+  },
+  {
+    "id": 344,
+    "difficulty": "Easy",
+    "topics": [
+      "Two Pointers",
+      "String",
+      "Recursion"
+    ],
+    "name": "Reverse String",
+    "content": "Write a function that reverses a string. The input string is given as an array of characters `s`.\n\nYou must do this by modifying the input array in-place with O(1) extra memory."
+  },
+  {
+    "id": 345,
+    "difficulty": "Easy",
+    "topics": [
+      "Two Pointers",
+      "String"
+    ],
+    "name": "Reverse Vowels of a String",
+    "content": "Given a string `s`, reverse only all the vowels in the string and return it.\n\nThe vowels are `a`, `e`, `i`, `o`, and `u`, and they can appear in both lower and upper cases, more than once."
+  },
+  {
+    "id": 346,
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Design",
+      "Queue",
+      "Data Stream"
+    ],
+    "name": "Moving Average from Data Stream",
+    "content": "Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.\n\nImplement the `MovingAverage` class:\n- `MovingAverage(int size)` Initializes the object with the size of the window `size`.\n- `double next(int val)` Returns the moving average of the last `size` values of the stream."
+  },
+  {
+    "id": 347,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Divide and Conquer",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Bucket Sort",
+      "Counting",
+      "Quickselect"
+    ],
+    "name": "Top K Frequent Elements",
+    "content": "Given an integer array `nums` and an integer `k`, return the `k` most frequent elements. You may return the answer in any order."
+  },
+  {
+    "id": 348,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Design"
+    ],
+    "name": "Design Tic-Tac-Toe",
+    "content": "Assume the following rules are for the tic-tac-toe game on an `n x n` board between two players:\n\n1. A move is guaranteed to be valid and is placed on an empty block.\n2. Once a winning condition is reached, no more moves are allowed.\n3. A player who succeeds in placing `n` of their marks in a horizontal, vertical, or diagonal row wins the game.\n\nImplement the `TicTacToe` class:\n- `TicTacToe(int n)` Initializes the object the size of the board `n`.\n- `int move(int row, int col, int player)` Indicates that the player with id `player` plays at the cell `(row, col)` of the board. The move is guaranteed to be a valid move."
+  },
+  {
+    "id": 349,
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Two Pointers",
+      "Binary Search",
+      "Sorting"
+    ],
+    "name": "Intersection of Two Arrays",
+    "content": "Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result must be unique and you may return the result in any order."
+  },
+  {
+    "id": 350,
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Two Pointers",
+      "Binary Search",
+      "Sorting"
+    ],
+    "name": "Intersection of Two Arrays II",
+    "content": "Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order."
+  },
+  {
+    "id": 351,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "name": "Android Unlock Patterns",
+    "content": "Android devices have a special lock screen with a 3 x 3 grid of dots. Users can set an \"unlock pattern\" by connecting dots in a specific sequence, forming a pattern of at least 4 dots.\n\nGiven two integers `m` and `n`, return the number of unique and valid unlock patterns of the Android grid lock screen that consist of at least `m` keys and at most `n` keys.\n\nTwo patterns are considered different if they have different length or contain different dots sequence."
+  },
+  {
+    "id": 352,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "name": "Data Stream as Disjoint Intervals",
+    "content": "Given a data stream input of non-negative integers `a1`, `a2`, ..., `an`, summarize the numbers seen so far as a list of disjoint intervals.\n\nImplement the `SummaryRanges` class:\n- `SummaryRanges()` Initializes the object with an empty stream.\n- `void addNum(int value)` Adds the integer `value` to the stream.\n- `int[][] getIntervals()` Returns a summary of the integers in the stream currently as a list of disjoint intervals `[starti, endi]`."
+  },
+  {
+    "id": 353,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Design"
+    ],
+    "name": "Design Snake Game",
+    "content": "Design a Snake game that is played on a device with screen size = width x height. Play the game online if you are not familiar with the game.\n\nThe snake is initially positioned at the top left corner `(0,0)` with length = 1 unit.\n\nYou are given a list of food's positions in row-column order. When a snake eats the food, its length and the game's score both increase by 1.\n\nEach food appears one by one on the screen. For example, the second food will not appear until the first food was eaten by the snake.\n\nWhen a food does appear on the screen, it is guaranteed that it will not appear on a block occupied by the snake."
+  },
+  {
+    "id": 354,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Dynamic Programming"
+    ],
+    "name": "Russian Doll Envelopes",
+    "content": "You are given a 2D array of integers `envelopes` where `envelopes[i] = [wi, hi]` represents the width and the height of an envelope.\n\nOne envelope can fit into another if and only if both the width and height of one envelope are greater than the other envelope's width and height.\n\nReturn the maximum number of envelopes you can Russian doll (i.e., put one inside the other)."
+  },
+  {
+    "id": 355,
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table",
+      "Heap (Priority Queue)",
+      "Design"
+    ],
+    "name": "Design Twitter",
+    "content": "Design a simplified version of Twitter where users can post tweets, follow/unfollow another user, and is able to see the 10 most recent tweets in the user's news feed.\n\nImplement the `Twitter` class:\n- `Twitter()` Initializes your twitter object.\n- `void postTweet(int userId, int tweetId)` Composes a new tweet with ID `tweetId` by the user `userId`.\n- `List<Integer> getNewsFeed(int userId)` Retrieves the 10 most recent tweet IDs in the user's news feed.\n- `void follow(int followerId, int followeeId)` The user with ID `followerId` started following the user with ID `followeeId`.\n- `void unfollow(int followerId, int followeeId)` The user with ID `followerId` started unfollowing the user with ID `followeeId`."
+  },
+  {
+    "id": 356,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Math"
+    ],
+    "name": "Line Reflection",
+    "content": "Given `n` points on a 2D plane, find if there is such a line parallel to the y-axis that reflects the given points symmetrically.\n\nIn other words, answer whether or not if there exists a line that after reflecting all points over the given line, the original points' set is the same as the reflected ones.\n\nNote that there can be repeated points."
+  },
+  {
+    "id": 357,
+    "difficulty": "Medium",
+    "topics": [
+      "Math",
+      "Dynamic Programming",
+      "Backtracking"
+    ],
+    "name": "Count Numbers with Unique Digits",
+    "content": "Given an integer `n`, return the count of all numbers with unique digits, `x`, where `0 <= x < 10^n`."
+  },
+  {
+    "id": 358,
+    "difficulty": "Hard",
+    "topics": [
+      "Hash Table",
+      "String",
+      "Sorting"
+    ],
+    "name": "Rearrange String k Distance Apart",
+    "content": "Given a string `s` and an integer `k`, rearrange `s` such that the same characters are at least distance `k` from each other. If it is not possible to rearrange the string, return an empty string `\"\"`."
+  },
+  {
+    "id": 359,
+    "difficulty": "Easy",
+    "topics": [
+      "Hash Table",
+      "Design"
+    ],
+    "name": "Logger Rate Limiter",
+    "content": "Design a logger system that receives a stream of messages along with their timestamps. Each unique message should only be printed at most every 10 seconds (i.e., a message printed at timestamp `t` will prevent other identical messages from being printed until timestamp `t + 10`).\n\nAll messages will come in chronological order. Several messages may arrive at the same timestamp.\n\nImplement the `Logger` class:\n- `Logger()` Initializes the logger object.\n- `boolean shouldPrintMessage(int timestamp, string message)` Returns true if the message should be printed in the given timestamp, otherwise returns false."
+  },
+  {
+    "id": 360,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Math",
+      "Sorting"
+    ],
+    "name": "Sort Transformed Array",
+    "content": "Given a sorted integer array `nums` and three integers `a`, `b` and `c`, apply a quadratic function of the form `f(x) = ax² + bx + c` to each element `nums[i]` in the array, and return the array in a sorted order."
+  },
+  {
+    "id": 361,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "name": "Bomb Enemy",
+    "content": "Given an `m x n` matrix `grid` where each cell can be a wall `'W'`, an enemy `'E'` or empty `'0'`, return the maximum enemies you can kill using one bomb. You can only place the bomb in an empty cell.\n\nThe bomb kills all the enemies in the same row and column from the planted point until it hits the wall since it is too strong to be destroyed.\n\nNote that you can only put the bomb at an empty cell."
+  },
+  {
+    "id": 362,
+    "difficulty": "Medium",
+    "topics": [
+      "Design"
+    ],
+    "name": "Design Hit Counter",
+    "content": "Design a hit counter which counts the number of hits received in the past 5 minutes (i.e., the past 300 seconds).\n\nImplement the `HitCounter` class:\n- `HitCounter()` Initializes the object of the hit counter system.\n- `void hit(int timestamp)` Records a hit that happened at `timestamp` (in seconds). Several hits may happen at the same `timestamp`.\n- `int getHits(int timestamp)` Returns the number of hits in the past 5 minutes from `timestamp` (i.e., the past 300 seconds)."
+  },
+  {
+    "id": 363,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Dynamic Programming",
+      "Sliding Window"
+    ],
+    "name": "Max Sum of Rectangle No Larger Than K",
+    "content": "Given an `m x n` matrix `matrix` and an integer `k`, return the max sum of a rectangle in the matrix such that its sum is no larger than `k`.\n\nIt is guaranteed that there will be a rectangle with a sum no larger than `k`."
+  },
+  {
+    "id": 364,
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search"
+    ],
+    "name": "Nested List Weight Sum II",
+    "content": "You are given a nested list of integers `nestedList`. Each element is either an integer or a list whose elements may also be integers or other lists.\n\nThe depth of an integer is the number of lists that it is inside of. For example, the nested list `[1,[2,2],[[3],2],1]` has each integer's value set to its depth. The weight of an integer is `maxDepth - (the depth of the integer) + 1`, where `maxDepth` is the maximum depth of any integer.\n\nReturn the sum of each integer in `nestedList` multiplied by its weight."
+  },
+  {
+    "id": 365,
+    "difficulty": "Medium",
+    "topics": [
+      "Math",
+      "Dynamic Programming"
+    ],
+    "name": "Water and Jug Problem",
+    "content": "You are given two jugs with capacities `jug1Capacity` and `jug2Capacity` liters. There is an infinite amount of water supply available. Determine whether it is possible to measure exactly `targetCapacity` liters using these two jugs.\n\nIf `targetCapacity` liters of water are measurable, you must have `targetCapacity` liters of water contained within one or both buckets by the end."
+  },
+  {
+    "id": 366,
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "name": "Find Leaves of Binary Tree",
+    "content": "Given the root of a binary tree, collect a tree's nodes as if you were doing this:\n- Collect all the leaf nodes.\n- Remove all the leaf nodes.\n- Repeat until the tree is empty."
+  },
+  {
+    "id": 367,
+    "difficulty": "Easy",
+    "topics": [
+      "Math",
+      "Binary Search"
+    ],
+    "name": "Valid Perfect Square",
+    "content": "Given a positive integer `num`, write a function which returns `True` if `num` is a perfect square else `False`.\n\nFollow up: Do not use any built-in library function such as `sqrt`."
+  },
+  {
+    "id": 368,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Math",
+      "Dynamic Programming"
+    ],
+    "name": "Largest Divisible Subset",
+    "content": "Given a set of distinct positive integers `nums`, return the largest subset `answer` such that every pair (`answer[i]`, `answer[j]`) of elements in this subset satisfies:\n- `answer[i] % answer[j] == 0`, or\n- `answer[j] % answer[i] == 0`\n\nIf there are multiple solutions, return any of them."
+  },
+  {
+    "id": 369,
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "name": "Plus One Linked List",
+    "content": "Given a non-negative integer represented as a linked list of digits, plus one to the number.\n\nThe digits are stored such that the most significant digit is at the head of the list."
+  },
+  {
+    "id": 370,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Math",
+      "Dynamic Programming"
+    ],
+    "name": "Range Addition",
+    "content": "You are given an integer `length` and an array `updates` where `updates[i] = [startIdxi, endIdxi, inci]`.\n\nYou have an array `arr` of length `length` with all zeros, and you have some operation to apply on `arr`. In the `ith` operation, you should increment all the elements `arr[startIdxi]`, `arr[startIdxi + 1]`, ..., `arr[endIdxi]` by `inci`.\n\nReturn `arr` after applying all the updates."
+  },
+  {
+    "id": 371,
+    "difficulty": "Medium",
+    "topics": [
+      "Math",
+      "Bit Manipulation"
+    ],
+    "name": "Sum of Two Integers",
+    "content": "Given two integers `a` and `b`, return the sum of the two integers without using the operators `+` and `-`."
+  },
+  {
+    "id": 372,
+    "difficulty": "Medium",
+    "topics": [
+      "Math"
+    ],
+    "name": "Super Pow",
+    "content": "Your task is to calculate `a^b mod 1337` where `a` is a positive integer and `b` is an extremely large positive integer given in the form of an array."
+  },
+  {
+    "id": 373,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Heap (Priority Queue)"
+    ],
+    "name": "Find K Pairs with Smallest Sums",
+    "content": "You are given two integer arrays `nums1` and `nums2` sorted in ascending order and an integer `k`.\n\nDefine a pair `(u, v)` which consists of one element from the first array and one element from the second array.\n\nReturn the `k` pairs `(u1, v1)`, `(u2, v2)`, ..., `(uk, vk)` with the smallest sums."
+  },
+  {
+    "id": 374,
+    "difficulty": "Easy",
+    "topics": [
+      "Binary Search",
+      "Interactive"
+    ],
+    "name": "Guess Number Higher or Lower",
+    "content": "We are playing the Guess Game. The game is as follows:\n\nI pick a number from `1` to `n`. You have to guess which number I picked.\n\nEvery time you guess wrong, I will tell you whether the number I picked is higher or lower than your guess.\n\nYou call a pre-defined API `int guess(int num)`, which returns:\n- `-1` if `num` is higher than the picked number\n- `1` if `num` is lower than the picked number\n- `0` if `num` is equal to the picked number\n\nReturn the number that I picked."
+  },
+  {
+    "id": 375,
+    "difficulty": "Hard",
+    "topics": [
+      "Math",
+      "Binary Search",
+      "Dynamic Programming",
+      "Game Theory"
+    ],
+    "name": "Guess Number Higher or Lower II",
+    "content": "We are playing the Guessing Game. The game will work as follows:\n\n1. I pick a number between 1 and `n`.\n2. You guess a number.\n3. If you guess the right number, you win the game.\n4. If you guess the wrong number, then I will tell you whether the number I picked is higher or lower, and you will continue guessing.\n5. Every time you guess a wrong number `x`, you will pay `x` dollars. If you run out of money, you lose the game.\n\nGiven a particular `n`, return the minimum amount of money you need to guarantee a win regardless of what number I pick."
+  },
+  {
+    "id": 376,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "name": "Wiggle Subsequence",
+    "content": "A wiggle sequence is a sequence where the differences between successive numbers strictly alternate between positive and negative. The first difference (if one exists) may be either positive or negative. A sequence with one element and a sequence with two non-equal elements are trivially wiggle sequences.\n\nGiven an integer array `nums`, return the length of the longest wiggle subsequence of `nums`."
+  },
+  {
+    "id": 377,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "name": "Combination Sum IV",
+    "content": "Given an array of distinct integers `nums` and a target integer `target`, return the number of possible combinations that add up to `target`.\n\nThe test cases are generated so that the answer can fit in a 32-bit integer."
+  },
+  {
+    "id": 378,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Matrix",
+      "Heap (Priority Queue)"
+    ],
+    "name": "Kth Smallest Element in a Sorted Matrix",
+    "content": "Given an `n x n` matrix where each of the rows and columns is sorted in ascending order, return the kth smallest element in the matrix.\n\nNote that it is the kth smallest element in the sorted order, not the kth distinct element."
+  },
+  {
+    "id": 379,
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table",
+      "Design"
+    ],
+    "name": "Design Phone Directory",
+    "content": "Design a phone directory that initially has `maxNumbers` empty slots that can store numbers. The directory should store numbers, check if a certain slot is empty or not, and release a previously assigned number.\n\nImplement the `PhoneDirectory` class:\n- `PhoneDirectory(int maxNumbers)` Initializes the phone directory with the number of available slots `maxNumbers`.\n- `int get()` Provides a number that is not assigned to anyone. Returns -1 if no number is available.\n- `bool check(int number)` Returns true if the slot `number` is available and false otherwise.\n- `void release(int number)` Recycles or releases the slot `number`."
+  },
+  {
+    "id": 380,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Design",
+      "Randomized"
+    ],
+    "name": "Insert Delete GetRandom O(1)",
+    "content": "Implement the `RandomizedSet` class:\n- `RandomizedSet()` Initializes the `RandomizedSet` object.\n- `bool insert(int val)` Inserts an item `val` into the set if not present. Returns `true` if the item was not present, `false` otherwise.\n- `bool remove(int val)` Removes an item `val` from the set if present. Returns `true` if the item was present, `false` otherwise.\n- `int getRandom()` Returns a random element from the current set of elements (it's guaranteed that at least one element exists when this method is called). Each element must have the same probability of being returned."
+  },
+  {
+    "id": 381,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Design",
+      "Randomized"
+    ],
+    "name": "Insert Delete GetRandom O(1) - Duplicates allowed",
+    "content": "RandomizedCollection is a data structure that contains a collection of numbers, possibly duplicates (i.e., a multiset). It should support inserting and removing specific elements and also removing a random element.\n\nImplement the `RandomizedCollection` class:\n- `RandomizedCollection()` Initializes the empty `RandomizedCollection` object.\n- `bool insert(int val)` Inserts an item `val` into the multiset, even if the item is already present. Returns `true` if the item is not present, `false` otherwise.\n- `bool remove(int val)` Removes an item `val` from the multiset if present. Returns `true` if the item is present, `false` otherwise. Note that if `val` has multiple occurrences in the multiset, we only remove one of them.\n- `int getRandom()` Returns a random element from the current multiset of elements. The probability of each element being returned is linearly related to the number of same values the multiset contains."
+  },
+  {
+    "id": 382,
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Math",
+      "Reservoir Sampling",
+      "Randomized"
+    ],
+    "name": "Linked List Random Node",
+    "content": "Given a singly linked list, return a random node's value from the linked list. Each node must have the same probability of being chosen.\n\nImplement the `Solution` class:\n- `Solution(ListNode head)` Initializes the object with the head of the singly-linked list `head`.\n- `int getRandom()` Returns a random node's value from the linked list."
+  },
+  {
+    "id": 383,
+    "difficulty": "Easy",
+    "topics": [
+      "Hash Table",
+      "String",
+      "Counting"
+    ],
+    "name": "Ransom Note",
+    "content": "Given two strings `ransomNote` and `magazine`, return `true` if `ransomNote` can be constructed by using the letters from `magazine` and `false` otherwise.\n\nEach letter in `magazine` can only be used once in `ransomNote`."
+  },
+  {
+    "id": 384,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Math",
+      "Randomized"
+    ],
+    "name": "Shuffle an Array",
+    "content": "Given an integer array `nums`, design an algorithm to randomly shuffle the array. All permutations of the array should be equally likely as a result of the shuffling.\n\nImplement the `Solution` class:\n- `Solution(int[] nums)` Initializes the object with the integer array `nums`.\n- `int[] reset()` Resets the array to its original configuration and returns it.\n- `int[] shuffle()` Returns a random shuffling of the array."
+  },
+  {
+    "id": 385,
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Stack",
+      "Recursion"
+    ],
+    "name": "Mini Parser",
+    "content": "Given a string `s` represents the serialization of a nested list, implement a parser to deserialize it and return the deserialized `NestedInteger`.\n\nEach element is either an integer or a list whose elements may also be integers or other lists."
+  },
+  {
+    "id": 386,
+    "difficulty": "Medium",
+    "topics": [
+      "Depth-First Search",
+      "Tree"
+    ],
+    "name": "Lexicographical Numbers",
+    "content": "Given an integer `n`, return all the numbers in the range `[1, n]` sorted in lexicographical order."
+  },
+  {
+    "id": 387,
+    "difficulty": "Easy",
+    "topics": [
+      "Hash Table",
+      "String",
+      "Queue",
+      "Counting"
+    ],
+    "name": "First Unique Character in a String",
+    "content": "Given a string `s`, find the first non-repeating character in it and return its index. If it does not exist, return -1."
+  },
+  {
+    "id": 388,
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Depth-First Search"
+    ],
+    "name": "Longest Absolute File Path",
+    "content": "Suppose we have a file system that stores both files and directories. Given a string `input` representing the file system in a specific format, return the length of the longest absolute path to a file in the abstracted file system. If there is no file in the system, return 0.\n\nNote that the test cases are generated such that the file system is valid and no file or directory name contains `\\t`, `\\n`, or `/`."
+  },
+  {
+    "id": 389,
+    "difficulty": "Easy",
+    "topics": [
+      "Hash Table",
+      "String",
+      "Bit Manipulation"
+    ],
+    "name": "Find the Difference",
+    "content": "You are given two strings `s` and `t`.\n\nString `t` is generated by random shuffling string `s` and then adding one more letter at a random position.\n\nReturn the letter that was added to `t`."
+  },
+  {
+    "id": 390,
+    "difficulty": "Medium",
+    "topics": [
+      "Math",
+      "Dynamic Programming"
+    ],
+    "name": "Elimination Game",
+    "content": "You have a list `arr` of all integers in the range `[1, n]` sorted in a strictly increasing order. Apply the following algorithm on `arr`:\n\n- Starting from left to right, remove the first number and every other number afterward until you reach the end of the list.\n- Repeat the previous step again, but this time from right to left, remove the rightmost number and every other number from the remaining numbers.\n- Keep repeating the steps again, alternating left to right and right to left, until a single number remains.\n\nGiven the integer `n`, return the last number that remains in `arr`."
+  },
+  {
+    "id": 391,
+    "difficulty": "Hard",
+    "topics": [
+      "Array"
+    ],
+    "name": "Perfect Rectangle",
+    "content": "Given an array `rectangles` where `rectangles[i] = [xi, yi, ai, bi]` represents an axis-aligned rectangle. The bottom-left point of the rectangle is `(xi, yi)` and the top-right point of it is `(ai, bi)`.\n\nReturn `true` if all the rectangles together form an exact cover of a rectangular region."
+  },
+  {
+    "id": 392,
+    "difficulty": "Easy",
+    "topics": [
+      "Two Pointers",
+      "String",
+      "Dynamic Programming"
+    ],
+    "name": "Is Subsequence",
+    "content": "Given two strings `s` and `t`, return `true` if `s` is a subsequence of `t`, or `false` otherwise.\n\nA subsequence of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., \"ace\" is a subsequence of \"abcde\" while \"aec\" is not)."
+  },
+  {
+    "id": 393,
+    "difficulty": "Medium",
+    "topics": [
+      "Bit Manipulation"
+    ],
+    "name": "UTF-8 Validation",
+    "content": "Given an integer array `data` representing the data, return whether it is a valid UTF-8 encoding (i.e. it translates to a sequence of valid UTF-8 encoded characters).\n\nA character in UTF-8 can be from 1 to 4 bytes long, subjected to the following rules:\n1. For a 1-byte character, the first bit is a `0`, followed by its Unicode code.\n2. For an n-bytes character, the first n bits are all `1`'s, the n + 1 bit is `0`, followed by n - 1 bytes with the most significant 2 bits being `10`."
+  },
+  {
+    "id": 394,
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Stack",
+      "Recursion"
+    ],
+    "name": "Decode String",
+    "content": "Given an encoded string, return its decoded string.\n\nThe encoding rule is: `k[encoded_string]`, where the `encoded_string` inside the square brackets is being repeated exactly `k` times. Note that `k` is guaranteed to be a positive integer.\n\nYou may assume that the input string is always valid; there are no extra white spaces, square brackets are well-formed, etc. Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, `k`. For example, there will not be input like `3a` or `2[4]`."
+  },
+  {
+    "id": 395,
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table",
+      "String",
+      "Divide and Conquer",
+      "Sliding Window"
+    ],
+    "name": "Longest Substring with At Least K Repeating Characters",
+    "content": "Given a string `s` and an integer `k`, return the length of the longest substring of `s` such that the frequency of each character in this substring is greater than or equal to `k`."
+  },
+  {
+    "id": 396,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "name": "Rotate Function",
+    "content": "You are given an integer array `nums` of length `n`.\n\nAssume `arrk` to be an array obtained by rotating `nums` by `k` positions clock-wise. We define the rotation function `F` on `nums` as follow:\n- `F(k) = 0 * arrk[0] + 1 * arrk[1] + ... + (n - 1) * arrk[n - 1].`\n\nReturn the maximum value of `F(0), F(1), ..., F(n-1)`."
+  },
+  {
+    "id": 397,
+    "difficulty": "Medium",
+    "topics": [
+      "Math",
+      "Dynamic Programming"
+    ],
+    "name": "Integer Replacement",
+    "content": "Given a positive integer `n`, you can apply one of the following operations:\n\n1. If `n` is even, replace `n` with `n / 2`.\n2. If `n` is odd, replace `n` with either `n + 1` or `n - 1`.\n\nReturn the minimum number of operations needed for `n` to become 1."
+  },
+  {
+    "id": 398,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Math",
+      "Reservoir Sampling",
+      "Randomized"
+    ],
+    "name": "Random Pick Index",
+    "content": "Given an integer array `nums` with possible duplicates, randomly output the index of a given target number. You can assume that the given target number must exist in the array.\n\nImplement the `Solution` class:\n- `Solution(int[] nums)` Initializes the object with the array `nums`.\n- `int pick(int target)` Picks a random index `i` such that `nums[i] == target`. If there are multiple valid `i`s, then each index should have an equal probability of being returned."
+  },
+  {
+    "id": 399,
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Union Find",
+      "Graph"
+    ],
+    "name": "Evaluate Division",
+    "content": "You are given an array of variable pairs `equations` and an array of real numbers `values`, where `equations[i] = [Ai, Bi]` and `values[i]` represent the equation `Ai / Bi = values[i]`. Each `Ai` or `Bi` is a string that represents a single variable.\n\nYou are also given some queries, where `queries[j] = [Cj, Dj]` represents the jth query where you must find the answer for `Cj / Dj = ?`.\n\nReturn the answers to all queries. If a single answer cannot be determined, return `-1.0`."
+  },
+  {
+    "id": 400,
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Math"
+    ],
+    "name": "Nth Digit",
+    "content": "Given an integer `n`, return the nth digit of the infinite integer sequence `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...]`."
+  }
 ]
