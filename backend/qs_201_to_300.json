@@ -242,14 +242,14 @@
         "difficulty": "Easy",
         "topics": ["Tree", "Depth-First Search", "Binary Search Tree", "Binary Tree"],
         "name": "Lowest Common Ancestor of a Binary Search Tree",
-        "content": "Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.\n\nAccording to the definition of LCA on Wikipedia: "The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow a node to be a descendant of itself).""
+        "content": "Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.\n\nAccording to the definition of LCA on Wikipedia: \"The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow a node to be a descendant of itself).\" "
     },
     {
         "id": 236,
         "difficulty": "Medium",
         "topics": ["Tree", "Depth-First Search", "Binary Tree"],
         "name": "Lowest Common Ancestor of a Binary Tree",
-        "content": "Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.\n\nAccording to the definition of LCA on Wikipedia: "The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow a node to be a descendant of itself).""
+        "content": "Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.\n\nAccording to the definition of LCA on Wikipedia: \"The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow a node to be a descendant of itself).\" "
     },
     {
         "id": 237,
@@ -648,14 +648,14 @@
         "difficulty": "Medium",
         "topics": ["String", "Dynamic Programming"],
         "name": "Flip Game",
-        "content": "You are playing a Flip Game with your friend. You are given a string `currentState` that contains only `'+'` and `'-'`. You and your friend take turns to flip two consecutive `\"++"` into `\"--\"`. The game ends when a person can no longer make a move, and therefore the other person will be the winner.\n\nReturn all possible states of the string `currentState` after one valid move."
+        "content": "You are playing a Flip Game with your friend. You are given a string `currentState` that contains only `'+'` and `'-'`. You and your friend take turns to flip two consecutive `\"++\"` into `\"--\"`. The game ends when a person can no longer make a move, and therefore the other person will be the winner.\n\nReturn all possible states of the string `currentState` after one valid move."
     },
     {
         "id": 294,
         "difficulty": "Medium",
         "topics": ["Math", "Dynamic Programming", "Backtracking", "Game Theory"],
         "name": "Flip Game II",
-        "content": "You are playing a Flip Game with your friend. You are given a string `currentState` that contains only `'+'` and `'-'`. You and your friend take turns to flip two consecutive `\"++"` into `\"--\"`. The game ends when a person can no longer make a move, and therefore the other person will be the winner.\n\nReturn `true` if you can win the game starting with the given string `currentState`, assuming both players play optimally."
+        "content": "You are playing a Flip Game with your friend. You are given a string `currentState` that contains only `'+'` and `'-'`. You and your friend take turns to flip two consecutive `\"++\"` into `\"--\"`. The game ends when a person can no longer make a move, and therefore the other person will be the winner.\n\nReturn `true` if you can win the game starting with the given string `currentState`, assuming both players play optimally."
     },
     {
         "id": 295,
