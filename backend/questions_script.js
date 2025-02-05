@@ -4,6 +4,7 @@ import { readFile, writeFile } from 'fs/promises';
 import { write } from "fs";
 dotenv.config()
 
+
 const openai = new OpenAI({
     apiKey: process.env.OPEN_AI_API_KEY,
     organization: process.env.OPEN_AI_ORGANIZATION,
@@ -40,4 +41,4 @@ async function main(file_name) {
     await writeFile(file_name, JSON.stringify(data, null, 2), 'utf8');
 }
 
-main('qs_301_to_400.json').catch(console.error);
+//TODO: merge topic "heap" and heap "(priority queue)"
