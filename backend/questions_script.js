@@ -34,9 +34,10 @@ async function main(file_name) {
 
     for (let i = 0; i < data.length; i++) {
         data[i].content = await formatContent(data[i].content); 
+        console.log("processed index ", i)
     }
 
     await writeFile(file_name, JSON.stringify(data, null, 2), 'utf8');
 }
 
-main('qs_1_to_200.json').catch(console.error);
+main('qs_301_to_400.json').catch(console.error);
