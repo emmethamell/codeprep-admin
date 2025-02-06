@@ -41,4 +41,5 @@ async function main(file_name) {
     await writeFile(file_name, JSON.stringify(data, null, 2), 'utf8');
 }
 
+
 //TODO: merge topic "heap" and heap "(priority queue)"

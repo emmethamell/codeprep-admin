@@ -62,4 +62,9 @@ async function main(file_name) {
     }
 }
 
-main('qs_401_to_500.json').catch(console.error);
+const file_names = ['qs_1_to_200.json', 'qs_201_to_300.json', 'qs_301_to_400.json', 'qs_401_to_500.json']
+
+for (const file of file_names){
+    console.log("starting")
+    main(file).catch(console.error)
+}
